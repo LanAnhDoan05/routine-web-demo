@@ -1,0 +1,126 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 900;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px 20px;
+  box-shadow: var(--shadow-flyout);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.closeBtn:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.iconDanger {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}
+
+.iconNeutral {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 16.5px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancelBtn {
+  padding: 9px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: var(--color-bg);
+}
+
+.confirmDangerBtn,
+.confirmBtn {
+  padding: 9px 16px;
+  border-radius: var(--radius-md);
+  border: none;
+  color: var(--color-white);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirmDangerBtn {
+  background: var(--color-error);
+}
+
+.confirmDangerBtn:hover {
+  background: #b8271e;
+}
+
+.confirmBtn {
+  background: var(--color-primary);
+}
+
+.confirmBtn:hover {
+  background: #000;
+}
+
+.cancelBtn:disabled,
+.confirmDangerBtn:disabled,
+.confirmBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,74 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.label {
+  font-size: var(--fs-label);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  height: var(--control-height);
+  padding: 0 var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-size: 16px;
+  transition: border-color var(--duration) var(--ease);
+}
+
+.input::placeholder {
+  color: #999999;
+}
+
+.input:hover {
+  border-color: #c9c9c9;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.inputWithToggle {
+  padding-right: 46px;
+}
+
+.toggleButton {
+  position: absolute;
+  right: var(--space-1);
+  height: 36px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-sm);
+}
+
+.toggleButton:hover {
+  color: var(--color-text);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#E9EDE9"/>
+  <g transform="translate(400 460) scale(2.6)" opacity="0.85"><path d="M-38 20 C-38 8 -30 4 -20 2 C-8 0 -2 -10 6 -18 C14 -26 24 -20 26 -10 C30 6 40 10 40 20 C40 26 34 30 26 30 L-30 30 C-36 30 -38 26 -38 20 Z" fill="none" stroke="#4B5D52" stroke-width="3" stroke-linejoin="round"/></g>
+  <text x="400" y="944" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#4B5D52" opacity="0.75">CHUNKY RETRO SNEAKERS</text>
+</svg>

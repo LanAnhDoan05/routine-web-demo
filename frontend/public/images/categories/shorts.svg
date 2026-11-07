@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#E7E9EC"/>
+  <g transform="translate(300 160) scale(2.6)" opacity="0.85"><path d="M-24 -40 L24 -40 L26 40 L8 40 L0 -6 L-8 40 L-26 40 Z" fill="none" stroke="#5B6470" stroke-width="3" stroke-linejoin="round"/></g>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#5B6470" opacity="0.75">SHORTS</text>
+</svg>

@@ -1,0 +1,14 @@
+.maskedPhone {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.otpWrap {
+  margin-bottom: var(--space-4);
+}
+
+.countdownRow {
+  margin-bottom: var(--space-6);
+}

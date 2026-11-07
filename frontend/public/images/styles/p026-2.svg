@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#E7E9EC"/>
+  <g transform="translate(400 460) scale(2.6)" opacity="0.85"><path d="M-24 -14 L24 -14 L28 40 L-28 40 Z" fill="none" stroke="#5B6470" stroke-width="3" stroke-linejoin="round"/><path d="M-14 -14 C-14 -30 14 -30 14 -14" fill="none" stroke="#5B6470" stroke-width="3"/></g>
+  <text x="400" y="944" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#5B6470" opacity="0.75">LEATHER BELT</text>
+</svg>

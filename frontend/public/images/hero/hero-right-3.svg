@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#24282B"/>
+      <stop offset="100%" stop-color="#121416"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#8FA89B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#121416" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g3)"/>
+  <rect width="800" height="1000" fill="url(#glow3)"/>
+  <g transform="translate(400 450) scale(4)" opacity="0.9">
+    <!-- Streetstyle silhouette -->
+    <path d="M-30 -30 L30 -30 L45 10 L25 60 L-25 60 L-45 10 Z" fill="none" stroke="#A6C2B4" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M-15 -30 Q0 -10 15 -30" fill="none" stroke="#A6C2B4" stroke-width="2.5"/>
+    <line x1="-20" y1="60" x2="-20" y2="100" stroke="#A6C2B4" stroke-width="2.5"/>
+    <line x1="20" y1="60" x2="20" y2="100" stroke="#A6C2B4" stroke-width="2.5"/>
+  </g>
+  <text x="400" y="780" text-anchor="middle" font-family="'Outfit', 'Inter', sans-serif" font-size="34" font-weight="700" letter-spacing="6" fill="#F4F1EE">DAILY ESSENTIALS</text>
+  <text x="400" y="825" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" letter-spacing="4" fill="#A6C2B4">WEEKEND CASUAL LOOK 03</text>
+  <line x1="320" y1="860" x2="480" y2="860" stroke="#A6C2B4" stroke-width="2" opacity="0.6"/>
+</svg>

@@ -1,0 +1,35 @@
+.logo {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--color-primary);
+}
+
+.logoLight {
+  color: var(--color-white);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-size: var(--fs-heading-mobile);
+  line-height: var(--lh-heading);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: var(--fs-heading-desktop);
+  }
+}
+
+.subtitle {
+  font-size: var(--fs-body);
+  color: var(--color-text-secondary);
+  max-width: 42ch;
+}

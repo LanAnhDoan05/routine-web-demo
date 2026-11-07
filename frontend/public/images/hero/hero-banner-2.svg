@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" width="1600" height="620">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F2EFE9"/>
+      <stop offset="45%" stop-color="#E5DEC9"/>
+      <stop offset="100%" stop-color="#2D2824"/>
+    </linearGradient>
+    <radialGradient id="glowR2" cx="80%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#E2C9A5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2D2824" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="620" fill="url(#bgGrad2)"/>
+  <rect width="1600" height="620" fill="url(#glowR2)"/>
+
+  <!-- Left abstract decorative elements -->
+  <rect x="60" y="60" width="300" height="480" fill="none" stroke="#A88F5B" stroke-width="1" opacity="0.2"/>
+  <circle cx="120" cy="520" r="140" fill="none" stroke="#A88F5B" stroke-width="1" opacity="0.2"/>
+
+  <!-- Right showcase graphic -->
+  <g transform="translate(1250 310) scale(3.2)" opacity="0.9">
+    <path d="M-25 -42 L25 -42 L38 -5 L18 68 L-18 68 L-38 -5 Z" fill="none" stroke="#E2C9A5" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M-14 -42 L0 8 L14 -42" fill="none" stroke="#E2C9A5" stroke-width="2.5"/>
+    <circle cx="0" cy="28" r="3" fill="#E2C9A5"/>
+    <circle cx="0" cy="44" r="3" fill="#E2C9A5"/>
+  </g>
+  <text x="1250" y="520" text-anchor="middle" font-family="'Outfit', 'Inter', sans-serif" font-size="28" font-weight="700" letter-spacing="6" fill="#F4F1EE">URBAN CHIC</text>
+  <text x="1250" y="555" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" letter-spacing="4" fill="#E2C9A5">SMART OFFICE LOOK 02</text>
+  <line x1="1180" y1="580" x2="1320" y2="580" stroke="#E2C9A5" stroke-width="2" opacity="0.6"/>
+</svg>

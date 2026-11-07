@@ -1,0 +1,179 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.genderGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-4);
+}
+
+.genderLabel {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.genderSubLabel {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.genderOptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.genderBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #ffffff;
+  border: 1.5px solid var(--color-border, #e5e5e5);
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.genderBtn:hover {
+  border-color: var(--color-text);
+  background: #fafafa;
+}
+
+.genderBtnActive {
+  background: var(--color-primary, #111111);
+  color: #ffffff !important;
+  border-color: var(--color-primary, #111111);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.genderIcon {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dobGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-4);
+}
+
+.dobLabel {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.dobSubLabel {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.dobInputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dobInput {
+  width: 100%;
+  height: var(--control-height, 48px);
+  padding: 0 var(--space-4, 16px);
+  background: var(--color-white, #ffffff);
+  border: 1.5px solid var(--color-border, #e5e5e5);
+  border-radius: 8px;
+  color: var(--color-text, #111111);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color var(--duration, 0.2s) var(--ease, ease);
+  cursor: pointer;
+}
+
+.dobInput:hover {
+  border-color: #c9c9c9;
+}
+
+.dobInput:focus {
+  outline: none;
+  border-color: var(--color-primary, #111111);
+}
+
+.dobInput[aria-invalid="true"] {
+  border-color: var(--color-error, #e53935);
+}
+
+.dobError {
+  font-size: 12px;
+  color: var(--color-error, #e53935);
+  margin-top: 6px;
+}
+
+.passwordStrengthSlot {
+  margin-top: calc(var(--space-4) * -1);
+}
+
+.termsRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.checkbox {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.termsLabel {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.termsLink {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.serverError {
+  font-size: 13px;
+  color: var(--color-error);
+  margin: calc(var(--space-3) * -1) 0 var(--space-4);
+}
+
+.footer {
+  margin-top: var(--space-8);
+  text-align: center;
+  font-size: var(--fs-body-sm);
+  color: var(--color-text-secondary);
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

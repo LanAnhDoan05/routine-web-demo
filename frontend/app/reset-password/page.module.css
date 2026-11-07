@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordStrengthSlot {
+  margin-top: calc(var(--space-4) * -1);
+}
+
+.serverError {
+  font-size: 13px;
+  color: var(--color-error);
+  margin: calc(var(--space-3) * -1) 0 var(--space-4);
+}

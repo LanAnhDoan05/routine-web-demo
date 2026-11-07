@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F4F0E8"/>
+  <g transform="translate(300 160) scale(2.6)" opacity="0.85"><path d="M-36 -28 L-14 -40 L0 -32 L14 -40 L36 -28 L30 0 L22 -4 L22 42 L-22 42 L-22 -4 L-30 0 Z" fill="none" stroke="#A88F5B" stroke-width="3" stroke-linejoin="round"/><path d="M0 -32 L0 42" stroke="#A88F5B" stroke-width="2"/></g>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#A88F5B" opacity="0.75">JACKET</text>
+</svg>

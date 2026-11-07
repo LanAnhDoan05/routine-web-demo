@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <linearGradient id="g_22" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5E7EB" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g_22)"/>
+  
+  <!-- Outer border -->
+  <rect x="24" y="24" width="752" height="952" fill="none" stroke="#333333" stroke-width="1.5" stroke-opacity="0.15"/>
+  
+  <!-- Silhouette Icon Box -->
+  <g transform="translate(400, 460) scale(3.5)" opacity="0.85">
+    <rect x="-35" y="-35" width="70" height="70" rx="12" fill="#333333" fill-opacity="0.06" stroke="#333333" stroke-width="1.5"/>
+    <circle cx="0" cy="-6" r="14" fill="none" stroke="#333333" stroke-width="2.5"/>
+    <path d="M-18 20 C-18 8, 18 8, 18 20" fill="none" stroke="#333333" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Product Label -->
+  <text x="400" y="700" text-anchor="middle" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="3" fill="#333333">
+    CROSSBODY BAG
+  </text>
+  <text x="400" y="735" text-anchor="middle" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="16" letter-spacing="4" fill="#333333" opacity="0.6">
+    ANGLE VIEW
+  </text>
+  
+  <!-- Routine Brand Tag -->
+  <text x="400" y="930" text-anchor="middle" font-family="'Outfit', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="6" fill="#333333" opacity="0.4">
+    ROUTINE
+  </text>
+</svg>

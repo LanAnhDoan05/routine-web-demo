@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F4F0E8"/>
+  <g transform="translate(300 155) scale(2.5)" opacity="0.85">
+    <path d="M-28 -25 L-12 -38 L0 -30 L12 -38 L28 -25 L20 -5 L12 -8 L12 40 L-12 40 L-12 -8 L-20 -5 Z" fill="none" stroke="#A88F5B" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="0" y1="-30" x2="0" y2="40" stroke="#A88F5B" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#A88F5B" opacity="0.75">MEN</text>
+</svg>

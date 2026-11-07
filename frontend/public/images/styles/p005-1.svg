@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#ECECEC"/>
+  <g transform="translate(400 460) scale(2.6)" opacity="0.85"><path d="M-34 -30 L-14 -42 L0 -34 L14 -42 L34 -30 L26 -10 L16 -14 L16 40 L-16 40 L-16 -14 L-26 -10 Z" fill="none" stroke="#3A3A3A" stroke-width="3" stroke-linejoin="round"/></g>
+  <text x="400" y="944" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#3A3A3A" opacity="0.75">CLASSIC PIQUE POLO</text>
+</svg>

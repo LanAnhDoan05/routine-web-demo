@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F4F0E8"/>
+  <g transform="translate(300 155) scale(2.4)" opacity="0.85">
+    <path d="M-15 -35 L15 -35 L12 -10 L28 35 L-28 35 L-12 -10 Z" fill="none" stroke="#A88F5B" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M-15 -35 Q0 -20 15 -35" fill="none" stroke="#A88F5B" stroke-width="2.5"/>
+  </g>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#A88F5B" opacity="0.75">WOMEN</text>
+</svg>

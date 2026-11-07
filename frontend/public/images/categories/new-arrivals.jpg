@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#F4F0E8"/>
+  <g transform="translate(300 160) scale(2.4)" opacity="0.85">
+    <polygon points="0,-35 11,-12 35,-12 16,3 23,26 0,13 -23,26 -16,3 -35,-12 -11,-12" fill="none" stroke="#A88F5B" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="0" cy="-2" r="6" fill="#A88F5B" opacity="0.6"/>
+  </g>
+  <text x="300" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#A88F5B" opacity="0.75">NEW ARRIVALS</text>
+</svg>

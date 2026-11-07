@@ -1,0 +1,109 @@
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 13.5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #000;
+}
+
+.loadingText {
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.tableCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.tableScroll {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.table th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 11px 14px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.nameCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.treeMark {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.mono {
+  color: var(--color-text-secondary);
+  font-size: 12.5px;
+}
+
+.actionsCol {
+  text-align: right;
+}
+
+.iconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.iconBtn:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.iconBtnDanger:hover {
+  background: var(--color-error-bg);
+  color: var(--color-error);
+}

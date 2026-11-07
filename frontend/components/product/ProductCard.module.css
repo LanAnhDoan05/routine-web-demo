@@ -1,0 +1,177 @@
+.card {
+  display: block;
+  position: relative;
+}
+
+.cardMinimal .category {
+  display: none;
+}
+
+.cardSale .imageWrap {
+  outline: 1px solid color-mix(in srgb, var(--color-primary, #222) 14%, transparent);
+}
+
+.cardQuickBuy .quickAdd,
+.cardQuickBuy .quickAddDisabled {
+  opacity: 1;
+  transform: none;
+}
+
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  container-type: inline-size;
+}
+
+.imageBack {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.card:hover .imageBack {
+  opacity: 1;
+}
+
+.badgeWrap {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.wishlistWrap {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+}
+
+.quickAdd {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.card:hover .quickAdd {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quickAddDisabled {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  background: rgba(240, 240, 240, 0.95);
+  color: var(--color-text-secondary, #888888);
+  border: 1px solid var(--color-border, #e0e0e0);
+  cursor: not-allowed;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.card:hover .quickAddDisabled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .quickAdd,
+  .quickAddDisabled {
+    opacity: 1;
+    transform: translateY(0);
+    position: static;
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+}
+
+.outOfStockWrap img {
+  filter: grayscale(45%) blur(1.5px) opacity(0.68);
+  transition: filter var(--transition-fast), opacity var(--transition-fast);
+}
+
+.outOfStockBadgeCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+  background: rgba(18, 18, 18, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm, 4px);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.outOfStockText {
+  font-size: 13px;
+  color: #dc2626;
+  font-weight: 600;
+  margin-left: 6px;
+  letter-spacing: 0.02em;
+}
+
+.info {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.colors {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.colorDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.soldCount {
+  font-size: 13px;
+  color: var(--color-text-secondary, #666);
+  white-space: nowrap;
+}

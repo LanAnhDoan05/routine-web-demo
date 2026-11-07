@@ -1,0 +1,453 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              String    @id @default(uuid())
+  fullName        String    @map("full_name")
+  phoneNumber     String    @unique @map("phone_number")
+  email           String    @unique
+  passwordHash    String    @map("password_hash")
+  role            Role      @default(CUSTOMER)
+  avatar          String?   @db.VarChar(500)
+  gender          String?   @default("unisex")
+  dateOfBirth     DateTime? @map("date_of_birth") @db.Date
+  date            DateTime? @map("date") @db.Date
+  stylePreference String?   @default("minimal") @map("style_preference")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  source          String?   @default("ORGANIC")
+  addresses       Address[]
+  cart            Cart?
+  orders          Order[]
+  reviews         Review[]
+  wishlist        Wishlist?
+
+  @@map("users")
+}
+
+model Address {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  receiverName String   @map("receiver_name")
+  phone        String
+  street       String
+  ward         String
+  district     String
+  city         String
+  isDefault    Boolean  @default(false) @map("is_default")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  latitude     Decimal? @db.Decimal(10, 7)
+  longitude    Decimal? @db.Decimal(10, 7)
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId], map: "addresses_user_id_fkey")
+  @@map("addresses")
+}
+
+model Category {
+  id          String    @id @default(uuid())
+  slug        String    @unique
+  name        String
+  description String?   @db.Text
+  image       String?   @db.VarChar(500)
+  type        String?   @default("standard")
+  parentId    String?   @map("parent_id")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  products    Product[]
+
+  @@map("categories")
+}
+
+model Product {
+  id            String          @id
+  slug          String          @unique
+  name          String
+  description   String?         @db.Text
+  shortDescription String?      @map("short_description") @db.VarChar(500)
+  price         Int
+  originalPrice Int?            @map("original_price")
+  gender        String          @default("unisex")
+  categoryId    String?         @map("category_id")
+  categorySlug  String?         @map("category_slug")
+  styles        Json?
+  badge         String?
+  status        ProductStatus   @default(ACTIVE)
+  materials     String?         @db.Text
+  care          String?         @db.Text
+  rating        Float?          @default(5)
+  reviewCount   Int             @default(0) @map("review_count")
+  images        Json?
+  sizes         Json?
+  colors        Json?
+  stockQuantity Int             @default(100) @map("stock_quantity")
+  isFeatured    Boolean         @default(false) @map("is_featured")
+  isTrending    Boolean         @default(false) @map("is_trending")
+  vector_x      Decimal?        @db.Decimal(6, 3)
+  vector_y      Decimal?        @db.Decimal(6, 3)
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+  soldCount     Int             @default(0) @map("sold_count")
+  cartItems     CartItem[]
+  orderItems    OrderItem[]
+  outfitItems   OutfitProduct[]
+  category      Category?       @relation(fields: [categoryId], references: [id])
+  reviews       Review[]
+  wishlistItems WishlistItem[]
+  variants      ProductVariant[]
+
+  @@index([categoryId], map: "products_category_id_fkey")
+  @@map("products")
+}
+
+model ProductVariant {
+  id            String              @id @db.VarChar(50)
+  productId     String              @map("product_id") @db.VarChar(191)
+  sku           String              @unique(map: "uk_variants_sku") @db.VarChar(100)
+  color         String?             @db.VarChar(50)
+  size          String?             @db.VarChar(50)
+  price         Int
+  stockQuantity Int                 @default(0) @map("stock_quantity")
+  status        ProductVariantStatus @default(ACTIVE)
+  createdAt     DateTime            @default(now()) @map("created_at")
+  product       Product             @relation(fields: [productId], references: [id], onDelete: Cascade, map: "fk_variants_product")
+
+  @@index([productId], map: "idx_variants_product")
+  @@map("product_variants")
+}
+
+model Outfit {
+  id          String          @id
+  slug        String          @unique
+  title       String
+  description String?         @db.Text
+  image       String          @db.VarChar(500)
+  images      Json?
+  occasion    String
+  style       String
+  gender      String          @default("unisex")
+  season      String?
+  featured    Boolean         @default(false)
+  createdAt   DateTime        @default(now()) @map("created_at")
+  updatedAt   DateTime        @updatedAt @map("updated_at")
+  products    OutfitProduct[]
+
+  @@map("outfits")
+}
+
+model OutfitProduct {
+  id        String  @id @default(uuid())
+  outfitId  String  @map("outfit_id")
+  productId String  @map("product_id")
+  outfit    Outfit  @relation(fields: [outfitId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([outfitId, productId])
+  @@index([productId], map: "outfit_products_product_id_fkey")
+  @@map("outfit_products")
+}
+
+model Order {
+  id                      String            @id
+  userId                  String?           @map("user_id")
+  guestSessionId          String?           @map("guest_session_id")
+  receiverName            String            @map("receiver_name")
+  phoneNumber             String            @map("phone_number")
+  shippingAddress         String            @map("shipping_address") @db.Text
+  shippingMethod          String            @default("standard") @map("shipping_method")
+  paymentMethod           PaymentMethod     @default(COD) @map("payment_method")
+  paymentStatus           PaymentStatus     @default(UNPAID) @map("payment_status")
+  orderStatus             OrderStatus       @default(CONFIRMED) @map("order_status")
+  subtotal                Int
+  shippingFee             Int               @default(0) @map("shipping_fee")
+  discount                Int               @default(0)
+  total                   Int
+  appliedCoupon           String?           @map("applied_coupon")
+  note                    String?           @db.Text
+  createdAt               DateTime          @default(now()) @map("created_at")
+  updatedAt               DateTime          @updatedAt @map("updated_at")
+  attributionSource       String?           @default("ORGANIC") @map("attribution_source")
+  items                   OrderItem[]
+  user                    User?             @relation(fields: [userId], references: [id])
+  reservation             StockReservation?
+
+  @@index([userId], map: "orders_user_id_fkey")
+  @@map("orders")
+}
+
+model StockReservation {
+  id        String   @id @default(uuid())
+  orderId   String   @unique @map("order_id")
+  items     Json
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([expiresAt])
+  @@map("stock_reservations")
+}
+
+model OrderItem {
+  id        String  @id @default(uuid())
+  orderId   String  @map("order_id")
+  productId String  @map("product_id")
+  name      String
+  image     String? @db.VarChar(500)
+  size      String?
+  color     String?
+  price     Int
+  quantity  Int
+  subtotal  Int
+  order     Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product @relation(fields: [productId], references: [id])
+
+  @@index([orderId], map: "order_items_order_id_fkey")
+  @@index([productId], map: "order_items_product_id_fkey")
+  @@map("order_items")
+}
+
+model Coupon {
+  code          String   @id
+  type          String
+  value         Int
+  maxDiscount   Int?     @map("max_discount")
+  minOrderValue Int      @default(0) @map("min_order_value")
+  description   String?
+  isActive      Boolean  @default(true) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@map("coupons")
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  productId String   @map("product_id")
+  rating    Int      @default(5)
+  comment   String?  @db.Text
+  images    Json?
+  createdAt DateTime @default(now()) @map("created_at")
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([productId], map: "reviews_product_id_fkey")
+  @@index([userId], map: "reviews_user_id_fkey")
+  @@map("reviews")
+}
+
+model Style {
+  id          String      @id @db.VarChar(50)
+  slug        String      @unique @db.VarChar(100)
+  name        String      @db.VarChar(255)
+  description String?     @db.Text
+  image       String?     @db.VarChar(500)
+  status      StyleStatus @default(ACTIVE)
+  createdAt   DateTime    @default(now()) @map("created_at")
+  updatedAt   DateTime    @default(now()) @updatedAt @map("updated_at")
+
+  @@map("styles")
+}
+
+model Cart {
+  id             String     @id @default(uuid())
+  userId         String?    @unique @map("user_id")
+  guestSessionId String?    @unique @map("guest_session_id")
+  appliedCoupon  String?    @map("applied_coupon")
+  createdAt      DateTime   @default(now()) @map("created_at")
+  updatedAt      DateTime   @updatedAt @map("updated_at")
+  items          CartItem[]
+  user           User?      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("carts")
+}
+
+model CartItem {
+  id            String   @id @default(uuid())
+  cartId        String   @map("cart_id")
+  productId     String   @map("product_id")
+  lineId        String   @map("line_id")
+  name          String
+  category      String?
+  gender        String?
+  price         Int
+  originalPrice Int?     @map("original_price")
+  image         String?  @db.VarChar(500)
+  size          String?
+  color         String?
+  quantity      Int      @default(1)
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  cart          Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product       Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([cartId, lineId])
+  @@index([productId], map: "cart_items_product_id_fkey")
+  @@map("cart_items")
+}
+
+model Wishlist {
+  id             String         @id @default(uuid())
+  userId         String?        @unique @map("user_id")
+  guestSessionId String?        @unique @map("guest_session_id")
+  createdAt      DateTime       @default(now()) @map("created_at")
+  updatedAt      DateTime       @updatedAt @map("updated_at")
+  items          WishlistItem[]
+  user           User?          @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("wishlists")
+}
+
+model WishlistItem {
+  id         String   @id @default(uuid())
+  wishlistId String   @map("wishlist_id")
+  productId  String   @map("product_id")
+  createdAt  DateTime @default(now()) @map("created_at")
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  wishlist   Wishlist @relation(fields: [wishlistId], references: [id], onDelete: Cascade)
+
+  @@unique([wishlistId, productId])
+  @@index([productId], map: "wishlist_items_product_id_fkey")
+  @@map("wishlist_items")
+}
+
+model TrafficLog {
+  id             String   @id @default(uuid())
+  platform       String
+  campaign       String?
+  productId      String?  @map("product_id")
+  guestSessionId String?  @map("guest_session_id")
+  userId         String?  @map("user_id")
+  action         String   @default("VIEW")
+  metadata       Json?
+  ipAddress      String?  @map("ip_address")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@index([platform])
+  @@index([guestSessionId])
+  @@index([userId])
+  @@index([productId])
+  @@index([createdAt])
+  @@map("traffic_logs")
+}
+
+model StoreSetting {
+  settingKey   String   @id @map("setting_key")
+  settingValue String   @map("setting_value") @db.LongText
+  description  String?  @db.VarChar(255)
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("store_settings")
+}
+
+model MediaFile {
+  id        String   @id
+  filename  String   @db.VarChar(255)
+  mimetype  String   @db.VarChar(100)
+  size      Int
+  data      Bytes
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([filename])
+  @@map("media_files")
+}
+
+model SizeGuide {
+  id        String   @id @default(uuid())
+  size      String   @unique @db.VarChar(20)
+  minHeight Int      @map("min_height")
+  maxHeight Int      @map("max_height")
+  minWeight Int      @map("min_weight")
+  maxWeight Int      @map("max_weight")
+  order     Int      @default(0)
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("size_guides")
+}
+
+model Store {
+  id           String   @id @default(uuid())
+  name         String   @db.VarChar(255)
+  slug         String   @unique @db.VarChar(255)
+  address      String   @db.VarChar(500)
+  city         String   @db.VarChar(100)
+  region       String   @default("SOUTH") @db.VarChar(50)
+  phone        String?  @db.VarChar(50)
+  openingHours String?  @default("09:00 - 22:00") @map("opening_hours") @db.VarChar(100)
+  mapUrl       String?  @map("map_url") @db.VarChar(500)
+  image        String?  @db.VarChar(500)
+  isActive     Boolean  @default(true) @map("is_active")
+  isFlagship   Boolean  @default(false) @map("is_flagship")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at")
+  latitude     Decimal? @db.Decimal(10, 7)
+  longitude    Decimal? @db.Decimal(10, 7)
+
+  @@index([city])
+  @@index([region])
+  @@map("stores")
+}
+
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model shipping_rules {
+  id                  String   @id
+  city                String   @db.VarChar(100)
+  district            String?  @db.VarChar(100)
+  region              String   @default("NORTH") @db.VarChar(50)
+  base_fee            Int      @default(30000)
+  free_ship_threshold Int?     @default(499000)
+  estimated_delivery  String?  @default("2-3 ngày") @db.VarChar(100)
+  is_active           Boolean  @default(true)
+  created_at          DateTime @default(now())
+
+  @@index([city])
+  @@index([region])
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+enum ProductStatus {
+  ACTIVE
+  DRAFT
+  INACTIVE
+}
+
+enum ProductVariantStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  SHIPPING
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  COD
+  CARD
+  VNPAY
+  MOMO
+}
+
+enum PaymentStatus {
+  UNPAID
+  PAID
+  REFUNDED
+}
+
+enum StyleStatus {
+  ACTIVE
+  INACTIVE
+}

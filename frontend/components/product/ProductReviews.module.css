@@ -1,0 +1,363 @@
+.reviewsSection {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.overviewCard {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  background: var(--color-bg, #fbfbfb);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .overviewCard {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.scoreBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--color-border);
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .scoreBox {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding-right: 0;
+    padding-bottom: 16px;
+  }
+}
+
+.averageScore {
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.starsRow {
+  display: flex;
+  gap: 4px;
+  color: #f59e0b;
+  margin: 8px 0;
+}
+
+.totalCount {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.breakdownBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12.5px;
+}
+
+.starLabel {
+  width: 48px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-align: right;
+}
+
+.barTrack {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: #f59e0b;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.countLabel {
+  width: 28px;
+  font-size: 11.5px;
+  color: var(--color-text-secondary);
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.filterBtn {
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: var(--color-text);
+}
+
+.filterBtn:hover {
+  background: var(--color-bg);
+}
+
+.filterBtnActive {
+  background: var(--color-text);
+  color: #ffffff;
+  border-color: var(--color-text);
+}
+
+.filterBtnActive:hover {
+  background: var(--color-text);
+}
+
+.formCard {
+  background: var(--color-white, #ffffff);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.formTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.starSelector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #d1d5db;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.1s, color 0.15s;
+}
+
+.starBtn:hover {
+  transform: scale(1.15);
+}
+
+.starBtnActive {
+  color: #f59e0b;
+}
+
+.starHint {
+  margin-left: 10px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 14px;
+  color: var(--color-text);
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  margin-bottom: 16px;
+  transition: border-color 0.15s;
+}
+
+.textarea:focus {
+  border-color: var(--color-text);
+}
+
+.submitBtn {
+  background: var(--color-text);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.submitBtn:hover {
+  background: #27272a;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loginPrompt {
+  background: #f4f4f5;
+  border-radius: var(--radius-md, 8px);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .loginPrompt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.loginPromptText {
+  font-size: 13.5px;
+  color: var(--color-text-secondary);
+}
+
+.loginBtn {
+  display: inline-block;
+  background: var(--color-text);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviewItem {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 20px;
+}
+
+.reviewItem:last-child {
+  border-bottom: none;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.userMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #18181b;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.reviewDate {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.reviewRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.reviewStars {
+  display: flex;
+  gap: 2px;
+  color: #f59e0b;
+  font-size: 13px;
+}
+
+.reviewComment {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.deleteBtn:hover {
+  background: #fef2f2;
+}
+
+.emptyReviews {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}

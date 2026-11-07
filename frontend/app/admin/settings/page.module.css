@@ -1,0 +1,108 @@
+.page {
+  display: grid;
+  gap: 20px;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.section {
+  padding: 20px;
+  border: 1px solid var(--color-border, #dedede);
+  background: var(--color-bg, #fff);
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.section p {
+  margin: 6px 0 16px;
+  color: var(--color-text-secondary, #666);
+  font-size: 13px;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  font-size: 13px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border, #dedede);
+  border-radius: 4px;
+  background: #fff;
+  color: inherit;
+}
+
+.toggleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 32px;
+  font-size: 13px;
+}
+
+.toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary, #222);
+}
+
+.error {
+  color: #b42318;
+}
+
+.saveButton {
+  justify-self: start;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 4px;
+  background: var(--color-primary, #222);
+  color: #fff;
+  cursor: pointer;
+}
+
+.saveButton:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+@media (max-width: 760px) {
+  .fieldGrid,
+  .toggleGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 14px;
+  }
+
+  .fieldGrid,
+  .toggleGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

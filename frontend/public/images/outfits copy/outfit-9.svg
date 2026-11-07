@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <rect width="700" height="500" fill="#F0E9EC"/>
+  <g transform="translate(350 210) scale(2.6)" opacity="0.85"><path d="M-24 -40 L24 -40 L26 40 L8 40 L0 -6 L-8 40 L-26 40 Z" fill="none" stroke="#8A5A63" stroke-width="3" stroke-linejoin="round"/></g>
+  <text x="350" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" letter-spacing="2" fill="#8A5A63" opacity="0.75">OUTFIT 9</text>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx prisma generate",
+    "start": "node --watch ./bin/www",
+    "dev": "node --watch ./bin/www",
+    "test:ai-validation": "node --test tests/test_ai_request_validation.js",
+    "test:product-validation": "node --test tests/test_product_validation.js",
+    "export:sql": "node scripts/build_full_sql.js",
+    "db:dump": "node scripts/dump_mysql.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.6",
+    "debug": "~2.6.9",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "multer": "^2.3.0",
+    "nodemailer": "^10.0.1",
+    "vnpay": "^2.5.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
+}
