@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import { slugify } from "@/data/products";
 import { getCategories } from "@/lib/categoryService";
 import { getStyles } from "@/lib/styleService";
-import { colors as allColors, getColorById, registerColor, toColorSlug } from "@/data/colors";
-import { sizes as allSizes, getSizeById } from "@/data/sizes";
+import { getColorById, registerColor, toColorSlug } from "@/data/colors";
+import { getSizeById } from "@/data/sizes";
 import { suggestSkuPrefix, buildVariantSku } from "@/lib/sku";
 import { isSkuTaken } from "@/lib/adminProductService";
 import { useToast } from "./ToastProvider";
@@ -58,7 +58,7 @@ function emptyForm() {
     status: "DRAFT",
     badge: "NONE",
     isFeatured: false,
-    stockQuantity: "100",
+    stockQuantity: "0",
   };
 }
 
@@ -101,8 +101,8 @@ function productToForm(product) {
     variants = rawVariants.map((v, i) => {
       const cObj = getColorById(v.colorId || v.colorName);
       const sObj = getSizeById(v.sizeId || v.sizeName);
-      const cId = cObj ? cObj.id : (v.colorId || "color-white");
-      const sId = sObj ? sObj.id : (v.sizeId || "size-m");
+      const cId = cObj ? cObj.id : (v.colorId || v.colorName || "");
+      const sId = sObj ? sObj.id : (v.sizeId || v.sizeName || "");
       let sku = (v.sku || "").trim();
       // Nếu SKU rỗng, bị trùng lặp hoặc chứa mã cũ không chuẩn (-CO-), tự sinh SKU mới độc nhất
       if (!sku || seenSkus.has(sku.toLowerCase()) || sku.includes("-CO-")) {
@@ -127,85 +127,32 @@ function productToForm(product) {
         sizeName: sObj ? sObj.name : (v.sizeName || "Default"),
         sku,
         price: v.price !== undefined ? Number(v.price) : (Number(product.price) || 0),
-        stockQuantity: v.stockQuantity !== undefined ? Number(v.stockQuantity) : 25,
+        stockQuantity: v.stockQuantity !== undefined ? Number(v.stockQuantity) : 0,
         status: v.status || "ACTIVE",
       };
     });
   } else {
-    // Tự động tạo danh sách biến thể từ colors & sizes nếu chưa có
-    const pColors = Array.isArray(product.colors) && product.colors.length > 0
-      ? product.colors
-      : ["White", "Black"];
-    const pSizes = Array.isArray(product.sizes) && product.sizes.length > 0
-      ? product.sizes
-      : ["S", "M", "L", "XL"];
-
-    const matchedColorIds = Array.from(
-      new Set(
-        pColors.map((cName) => {
-          const found = getColorById(cName);
-          if (found) return found.id;
-          const slug = toColorSlug(cName);
-          const customId = `color-${slug || "custom"}`;
-          registerColor({ id: customId, name: cName, hexCode: "#666666" });
-          return customId;
-        })
-      )
-    );
-
-    const matchedSizeIds = Array.from(
-      new Set(
-        pSizes.map((sName) => {
-          const found = getSizeById(sName);
-          return found ? found.id : allSizes[1]?.id || "size-m";
-        })
-      )
-    );
-
-    const totalCombos = Math.max(1, matchedColorIds.length * matchedSizeIds.length);
-    const prodStock = product.stockQuantity !== undefined ? Number(product.stockQuantity) : 100;
-    const baseStock = Math.floor(prodStock / totalCombos);
-    let rem = prodStock % totalCombos;
-
-    let seq = 1;
-    const seenSkus = new Set();
-    for (const cId of matchedColorIds) {
-      for (const sId of matchedSizeIds) {
-        const cObj = getColorById(cId);
-        const sObj = getSizeById(sId);
-        const vStock = baseStock + (rem > 0 ? 1 : 0);
-        if (rem > 0) rem -= 1;
-        const freshSku = buildVariantSku(prefix, seq, cObj?.id || cId, sObj?.id || sId);
-        let finalSku = freshSku;
-        if (seenSkus.has(finalSku.toLowerCase())) {
-          let counter = 1;
-          let candidate = `${finalSku}-${counter}`;
-          while (seenSkus.has(candidate.toLowerCase())) {
-            counter += 1;
-            candidate = `${finalSku}-${counter}`;
-          }
-          finalSku = candidate;
-        }
-        seenSkus.add(finalSku.toLowerCase());
-
-        variants.push({
-          id: `v-${product.id || "p"}-${seq}`,
-          colorId: cObj?.id || cId,
-          colorName: cObj ? cObj.name : (cId ? String(cId).replace(/^color-/, "") : "Default"),
-          sizeId: sObj?.id || sId,
-          sizeName: sObj ? sObj.name : (sId ? String(sId).replace(/^size-/, "").toUpperCase() : "Default"),
-          sku: finalSku,
-          price: Number(product.price) || 0,
-          stockQuantity: vStock,
-          status: "ACTIVE",
-        });
-        seq += 1;
-      }
-    }
   }
 
-  const colorIds = Array.from(new Set(variants.map((v) => v.colorId).filter(Boolean)));
-  const sizeIds = Array.from(new Set(variants.map((v) => v.sizeId).filter(Boolean)));
+  const optionColorIds = Array.isArray(product.colors)
+    ? product.colors.map((name) => {
+        const found = getColorById(name);
+        if (found) return found.id;
+        const id = `color-${toColorSlug(name) || "custom"}`;
+        registerColor({ id, name, hexCode: "#666666" });
+        return id;
+      })
+    : [];
+  const optionSizeIds = Array.isArray(product.sizes)
+    ? product.sizes.map((name) => {
+        const found = getSizeById(name);
+        if (found) return found.id;
+        const slug = String(name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+        return slug ? `size-${slug}` : null;
+      }).filter(Boolean)
+    : [];
+  const colorIds = Array.from(new Set(variants.length ? variants.map((v) => v.colorId).filter(Boolean) : optionColorIds));
+  const sizeIds = Array.from(new Set(variants.length ? variants.map((v) => v.sizeId).filter(Boolean) : optionSizeIds));
 
   // 3. Chuẩn hóa giới tính
   const rawGender = (product.gender || "UNISEX").toUpperCase();
@@ -223,7 +170,7 @@ function productToForm(product) {
 
   const totalStock = product.stockQuantity !== undefined
     ? Number(product.stockQuantity)
-    : (variants.length > 0 ? variants.reduce((sum, v) => sum + (Number(v.stockQuantity) || 0), 0) : 100);
+    : (variants.length > 0 ? variants.reduce((sum, v) => sum + (Number(v.stockQuantity) || 0), 0) : 0);
 
   return {
     name: product.name || "",
@@ -356,13 +303,22 @@ export default function ProductForm({ mode, initialProduct, onSave }) {
     }
 
     if (form.images.length === 0) nextErrors.images = "At least 1 image is required.";
-    if (form.variants.length === 0) nextErrors.variants = "At least 1 variant is required.";
+    const hasExistingVariants = Array.isArray(initialProduct?.variants) && initialProduct.variants.length > 0;
+    if (form.variants.length === 0 && (mode === "create" || hasExistingVariants)) {
+      nextErrors.variants = "At least 1 variant is required.";
+    }
 
     const nextVariantErrors = {};
     const seenSku = new Map();
     for (const v of form.variants) {
       const rowErr = {};
       const sku = (v.sku || "").trim();
+      if (!(v.colorName || v.colorId)) {
+        rowErr.color = "Color is required.";
+      }
+      if (!(v.sizeName || v.sizeId)) {
+        rowErr.size = "Size is required.";
+      }
       if (!sku) {
         rowErr.sku = "SKU is required.";
       } else {
@@ -469,7 +425,9 @@ export default function ProductForm({ mode, initialProduct, onSave }) {
       status: finalStatus,
       colors: resolvedColors,
       sizes: resolvedSizes,
-      variants: form.variants.map((v) => ({ ...v, sku: (v.sku || "").trim() })),
+      ...(form.variants.length > 0
+        ? { variants: form.variants.map((v) => ({ ...v, sku: (v.sku || "").trim() })) }
+        : {}),
     };
   }
 
@@ -593,7 +551,7 @@ export default function ProductForm({ mode, initialProduct, onSave }) {
               value={form.stockQuantity}
               onChange={handleTotalStockChange}
               error={errors.stockQuantity}
-              placeholder="100"
+              placeholder="0"
             />
           </div>
           {form.price ? (

@@ -38,3 +38,8 @@ Routine_db.sql
 routine_db.sql
 */routine_db.sql
 !.env.example
+
+# Local database backups
+.backups/
+*/.backups/
+backend/.backups/

@@ -27,8 +27,7 @@ export default function VariantEditor({
   generalError,
 }) {
   function buildVariants(colorIds, sizeIds, currentVariants) {
-    const activeColorIds = colorIds && colorIds.length ? colorIds : [null];
-    const activeSizeIds = sizeIds && sizeIds.length ? sizeIds : [null];
+    if (!colorIds?.length || !sizeIds?.length) return [];
 
     const next = [];
     let sequence = 1;
@@ -82,7 +81,7 @@ export default function VariantEditor({
           sizeName: sObj ? sObj.name : (existing?.sizeName || (sizeId ? String(sizeId).replace(/^size-/, "").toUpperCase() : "Default")),
           sku: finalSku,
           price: existing && existing.price !== undefined ? existing.price : (basePrice || 0),
-          stockQuantity: existing && existing.stockQuantity !== undefined ? existing.stockQuantity : 25,
+          stockQuantity: existing && existing.stockQuantity !== undefined ? existing.stockQuantity : 0,
           status: existing?.status || "ACTIVE",
         });
         sequence += 1;
@@ -182,8 +181,12 @@ export default function VariantEditor({
                       ) : (
                         v.colorName || v.colorId || "—"
                       )}
+                      {rowErrors.color ? <p className={styles.cellError}>{rowErrors.color}</p> : null}
                     </td>
-                    <td>{size ? size.name : (v.sizeName || v.sizeId || "—")}</td>
+                    <td>
+                      {size ? size.name : (v.sizeName || v.sizeId || "—")}
+                      {rowErrors.size ? <p className={styles.cellError}>{rowErrors.size}</p> : null}
+                    </td>
                     <td className={styles.skuCol}>
                       <input
                         type="text"

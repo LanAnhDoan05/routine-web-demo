@@ -7,6 +7,15 @@
 const prisma = require('../config/prisma');
 
 async function getHeldQuantity(productId, excludeOrderId = null, client = prisma) {
+  const heldQuantities = await getHeldQuantities([productId], excludeOrderId, client);
+  return heldQuantities.get(productId) || 0;
+}
+
+async function getHeldQuantities(productIds = [], excludeOrderId = null, client = prisma) {
+  const productIdSet = new Set(productIds.filter((productId) => typeof productId === 'string' && productId));
+  const heldQuantities = new Map([...productIdSet].map((productId) => [productId, 0]));
+  if (productIdSet.size === 0) return heldQuantities;
+
   const reservations = await client.stockReservation.findMany({
     where: {
       expiresAt: { gt: new Date() },
@@ -15,12 +24,15 @@ async function getHeldQuantity(productId, excludeOrderId = null, client = prisma
     select: { items: true },
   });
 
-  return reservations.reduce((total, reservation) => {
+  for (const reservation of reservations) {
     const items = Array.isArray(reservation.items) ? reservation.items : [];
-    return total + items.reduce((itemTotal, item) => {
-      return itemTotal + (item.productId === productId ? Number(item.quantity) || 1 : 0);
-    }, 0);
-  }, 0);
+    for (const item of items) {
+      if (!productIdSet.has(item.productId)) continue;
+      const quantity = Number(item.quantity);
+      heldQuantities.set(item.productId, heldQuantities.get(item.productId) + (quantity || 1));
+    }
+  }
+  return heldQuantities;
 }
 
 async function reserveStock(orderId, items = [], durationMinutes = 5) {
@@ -188,6 +200,7 @@ if (cleanupInterval.unref) cleanupInterval.unref();
 
 module.exports = {
   getHeldQuantity,
+  getHeldQuantities,
   reserveStock,
   commitStock,
   releaseStock,

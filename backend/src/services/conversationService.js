@@ -72,6 +72,9 @@ async function getRecentHistory(req, conversation) {
     ...(Array.isArray(message.metadata?.productNames)
       ? { products: message.metadata.productNames }
       : {}),
+    ...(Array.isArray(message.metadata?.productIds)
+      ? { productIds: message.metadata.productIds }
+      : {}),
     ...(typeof message.metadata?.outfitId === 'string'
       ? { outfitId: message.metadata.outfitId }
       : {}),
@@ -147,6 +150,9 @@ async function completeAssistantTurn(req, conversation, result) {
         metadata: {
           productIds,
           productNames,
+          toolCalls: Array.isArray(result.toolCalls)
+            ? result.toolCalls.filter((name) => typeof name === 'string').slice(0, 5)
+            : [],
           outfitId: typeof result.outfit?.id === 'string' ? result.outfit.id : null,
         },
       },

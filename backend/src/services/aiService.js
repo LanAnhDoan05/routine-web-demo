@@ -8,6 +8,9 @@ const sizeGuideService = require('./sizeGuideService');
 const vectorEngine = require('./vectorEngine');
 const geminiService = require('./geminiService');
 const { normalizeFashionQuery } = require('../utils/fashionThesaurus');
+const productService = require('./productService');
+const fashionAgentService = require('./fashionAgentService');
+const { createFashionToolHandlers } = require('./fashionAgentTools');
 
 async function callGeminiApi(options) {
   return geminiService.generateContent(options);
@@ -271,7 +274,9 @@ function isStandaloneProductRequest(intent = {}, userMessage = '') {
   const alsoRequestsBottom = (Array.isArray(intent.categories) &&
     intent.categories.some((category) => ['quan-jeans', 'quan-tay', 'quan-short', 'quan-kaki', 'vay'].includes(category))) ||
     /\b(quần|váy|jeans|trousers|shorts)\b/i.test(query);
-  return asksSingleTop && !alsoRequestsBottom ? 'top' : null;
+  if (asksSingleTop && !alsoRequestsBottom) return 'top';
+  if (alsoRequestsBottom && !asksSingleTop) return 'bottom';
+  return null;
 }
 
 function productColorMatches(colors, targetColor) {
@@ -776,18 +781,53 @@ async function assembleDynamicOutfit(intent, currentProduct = null, userMessage 
     return sc;
   }
 
-  if (!standaloneRequest && !chosenTop && tops.length > 0) {
+  if ((!standaloneRequest || standaloneRequest === 'top') && !chosenTop && tops.length > 0) {
     const scoredTops = tops
       .map((p) => ({ product: p, score: scoreTop(p) }))
       .sort((a, b) => b.score - a.score);
     if (scoredTops[0]?.score > -100) chosenTop = scoredTops[0].product;
   }
 
-  if (!standaloneRequest && !chosenBottom && bottoms.length > 0) {
+  if ((!standaloneRequest || standaloneRequest === 'bottom') && !chosenBottom && bottoms.length > 0) {
     const scoredBottoms = bottoms
       .map((p) => ({ product: p, score: scoreBottom(p) }))
       .sort((a, b) => b.score - a.score);
     if (scoredBottoms[0]?.score > -100) chosenBottom = scoredBottoms[0].product;
+  }
+
+  const outfitBudget = Number(intent.budget);
+  if (
+    !standaloneRequest &&
+    Number.isSafeInteger(outfitBudget) &&
+    outfitBudget > 0 &&
+    chosenTop &&
+    chosenBottom &&
+    Number(chosenTop.price) + Number(chosenBottom.price) > outfitBudget
+  ) {
+    const fixedTop = Boolean(currentProduct && isTop(currentProduct));
+    const fixedBottom = Boolean(currentProduct && isBottom(currentProduct));
+    const topOptions = (fixedTop ? [chosenTop] : tops)
+      .map((product) => ({ product, score: scoreTop(product) }))
+      .filter((entry) => entry.score > -100);
+    const bottomOptions = (fixedBottom ? [chosenBottom] : bottoms)
+      .map((product) => ({ product, score: scoreBottom(product) }))
+      .filter((entry) => entry.score > -100);
+    let bestPair = null;
+
+    for (const top of topOptions) {
+      for (const bottom of bottomOptions) {
+        const total = Number(top.product.price) + Number(bottom.product.price);
+        const score = top.score + bottom.score;
+        if (total <= outfitBudget && (!bestPair || score > bestPair.score)) {
+          bestPair = { top: top.product, bottom: bottom.product, score };
+        }
+      }
+    }
+
+    if (bestPair) {
+      chosenTop = bestPair.top;
+      chosenBottom = bestPair.bottom;
+    }
   }
 
   // Ưu tiên bổ sung Outerwear (Áo khoác / Blazer) cho mùa Thu Đông hoặc khi khách yêu cầu
@@ -830,6 +870,10 @@ async function assembleDynamicOutfit(intent, currentProduct = null, userMessage 
     chosenBottom = null;
     chosenAccessory = null;
     chosenOuterwear = null;
+  } else if (standaloneRequest === 'bottom') {
+    chosenTop = null;
+    chosenAccessory = null;
+    chosenOuterwear = null;
   }
 
   const rawSelectedItems = [chosenTop, chosenBottom, chosenAccessory, chosenOuterwear].filter(Boolean);
@@ -843,7 +887,9 @@ async function assembleDynamicOutfit(intent, currentProduct = null, userMessage 
     ? chosenOuterwear.name
     : standaloneRequest === 'top' && chosenTop
       ? chosenTop.name
-      : chosenTop && chosenBottom
+      : standaloneRequest === 'bottom' && chosenBottom
+        ? chosenBottom.name
+        : chosenTop && chosenBottom
     ? `Bộ Phối ${chosenTop.name.split(' - ')[0]} & ${chosenBottom.name.split(' - ')[0]}`
     : (chosenTop ? `Set Thời Trang ${chosenTop.name}` : 'Bộ Phối Thời Trang Routine');
 
@@ -930,6 +976,61 @@ async function chatWithStylist({ message, history = [], currentProductId = null,
   }
 
   const effectiveMessage = (message && message.trim()) || (imageAnalysis ? `Tìm trang phục tương tự phong cách ${imageAnalysis.description || 'trong ảnh'}` : '');
+
+  if (process.env.GEMINI_API_KEY) {
+    const executeFashionTool = createFashionToolHandlers({
+      productService,
+      formatProduct: formatProductForStylist,
+      productColorMatches,
+      assembleDynamicOutfit,
+      message: effectiveMessage,
+      history,
+      userPreferences,
+    });
+    const explicitlyRequestsOutfit = /\b(set|outfit|phối|kết hợp|cả bộ|bộ đồ|bộ trang phục)\b/i.test(effectiveMessage);
+    const agent = await fashionAgentService.runFashionAgent({
+      message: effectiveMessage,
+      history,
+      executeTool: (name, args) => {
+        if (name === 'recommend_outfit' && !explicitlyRequestsOutfit) {
+          return Promise.resolve({
+            found: false,
+            outfit: null,
+            reason: 'Chỉ đề xuất phối đồ khi khách yêu cầu rõ ràng.',
+          });
+        }
+        return executeFashionTool(name, args);
+      },
+    });
+    const isGreeting = isGreetingOrGeneralChat(effectiveMessage);
+    if (agent && (agent.toolCalls.length > 0 || isGreeting)) {
+      const intent = normalizeFashionQuery(effectiveMessage);
+      intent.isAskingForOutfit = !isGreeting;
+      intent.requestType = isGreeting ? 'greeting' : (agent.outfit ? 'new_outfit' : 'new_product');
+      intent.gender = userPreferences?.gender || intent.gender || 'unisex';
+      if (userPreferences?.style && !intent.style) intent.style = userPreferences.style;
+      if (imageAnalysis) intent.imageDescription = imageAnalysis.description;
+
+      const products = agent.products.filter(Boolean);
+      return {
+        message: agent.message || (products.length > 0
+          ? `Mình đã tìm thấy ${products.length} sản phẩm phù hợp trong catalog Routine.`
+          : 'Mình chưa tìm thấy sản phẩm đang bán phù hợp với yêu cầu này.'),
+        aiStatus: 'gemini_agent',
+        intent,
+        outfit: agent.outfit,
+        products,
+        total: agent.outfit?.total || 0,
+        sizeRecommendation: null,
+        followUps: [
+          'Xem size còn hàng của sản phẩm này',
+          'Tìm một màu khác',
+          'Gợi ý sản phẩm khác trong cùng danh mục',
+        ],
+        toolCalls: agent.toolCalls,
+      };
+    }
+  }
 
   // Phân tích intent và chuẩn hóa từ vựng tiếng Việt với ngữ cảnh đa lượt
   const intent = await extractFashionIntent(effectiveMessage, history);

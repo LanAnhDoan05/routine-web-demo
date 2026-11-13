@@ -50,7 +50,7 @@ function mapVariant(variant) {
   };
 }
 
-function mapPrismaProduct(product) {
+function mapPrismaProduct(product, heldQuantity = 0) {
   if (!product) return null;
   const styles = parseJsonArray(product.styles);
   const images = parseJsonArray(product.images)
@@ -60,7 +60,6 @@ function mapPrismaProduct(product) {
   const colors = parseJsonArray(product.colors);
   const variants = Array.isArray(product.variants) ? product.variants.map(mapVariant) : [];
   const stockQuantity = Number(product.stockQuantity || 0);
-  const heldQuantity = stockReservationService.getHeldQuantity(product.id);
   const categorySlug = product.categorySlug || product.category?.slug || product.categoryId || '';
 
   return {
@@ -105,7 +104,8 @@ async function getAllSourceProducts({ includeNonPublic = false } = {}) {
     include: { category: true, variants: true },
     orderBy: { createdAt: 'desc' },
   });
-  return records.map(mapPrismaProduct);
+  const heldQuantities = await stockReservationService.getHeldQuantities(records.map((record) => record.id));
+  return records.map((record) => mapPrismaProduct(record, heldQuantities.get(record.id) || 0));
 }
 
 async function getProducts({
@@ -183,7 +183,9 @@ async function getProductById(id, { includeNonPublic = false } = {}) {
     },
     include: { category: true, variants: true },
   });
-  return mapPrismaProduct(record);
+  if (!record) return null;
+  const heldQuantities = await stockReservationService.getHeldQuantities([record.id]);
+  return mapPrismaProduct(record, heldQuantities.get(record.id) || 0);
 }
 
 async function getAdminProductById(id) {
@@ -252,10 +254,29 @@ function normalizeVariants(variants) {
   }));
 }
 
+function validateImages(images) {
+  if (!Array.isArray(images) || images.length === 0) {
+    throw badRequest('Sản phẩm phải có ít nhất một hình ảnh');
+  }
+  for (const img of images) {
+    if (typeof img !== 'string' || !img.trim()) {
+      throw badRequest('Đường dẫn hình ảnh không hợp lệ');
+    }
+    const trimmed = img.trim();
+    const isValid =
+      trimmed.startsWith('/') ||
+      trimmed.startsWith('http://') ||
+      trimmed.startsWith('https://') ||
+      trimmed.startsWith('data:image/');
+    if (!isValid) {
+      throw badRequest('Định dạng đường dẫn ảnh không hợp lệ');
+    }
+  }
+}
+
 async function normalizeImages(images, productId) {
-  const fallbackImages = ['/images/products/default-product.svg'];
-  if (!Array.isArray(images) || !images.length || images.some((image) => typeof image !== 'string' || !image.trim())) {
-    return fallbackImages;
+  if (!Array.isArray(images) || !images.length) {
+    return [];
   }
   return (await processImageArray(images, productId))
     .map((image) => typeof image === 'string' ? image : image.url || '')
@@ -287,6 +308,7 @@ async function createProduct(productData = {}) {
   if (originalPrice !== undefined && originalPrice !== null && originalPrice !== '' && (
     !Number.isInteger(Number(originalPrice)) || Number(originalPrice) < 0
   )) throw badRequest('Giá gốc phải là số nguyên không âm');
+  validateImages(images);
   validateVariants(variants);
 
   const productId = `p-${randomUUID()}`;
@@ -324,7 +346,8 @@ async function createProduct(productData = {}) {
     },
     include: { category: true, variants: true },
   });
-  return mapPrismaProduct(created);
+  const heldQuantities = await stockReservationService.getHeldQuantities([created.id]);
+  return mapPrismaProduct(created, heldQuantities.get(created.id) || 0);
 }
 
 async function updateProduct(id, updateData = {}) {
@@ -376,7 +399,10 @@ async function updateProduct(id, updateData = {}) {
     data.categoryId = resolved.id;
     data.categorySlug = resolved.slug;
   }
-  if (updateData.images !== undefined) data.images = await normalizeImages(updateData.images, id);
+  if (updateData.images !== undefined) {
+    validateImages(updateData.images);
+    data.images = await normalizeImages(updateData.images, id);
+  }
   if (updateData.variants !== undefined) {
     validateVariants(updateData.variants);
     data.variants = { deleteMany: {}, create: normalizeVariants(updateData.variants) };
@@ -397,7 +423,8 @@ async function updateProduct(id, updateData = {}) {
     data,
     include: { category: true, variants: true },
   });
-  return mapPrismaProduct(updated);
+  const heldQuantities = await stockReservationService.getHeldQuantities([updated.id]);
+  return mapPrismaProduct(updated, heldQuantities.get(updated.id) || 0);
 }
 
 async function deleteProduct(id) {
@@ -407,7 +434,8 @@ async function deleteProduct(id) {
     data: { status: 'INACTIVE' },
     include: { category: true, variants: true },
   });
-  return mapPrismaProduct(updated);
+  const heldQuantities = await stockReservationService.getHeldQuantities([updated.id]);
+  return mapPrismaProduct(updated, heldQuantities.get(updated.id) || 0);
 }
 
 async function duplicateProduct(id) {
