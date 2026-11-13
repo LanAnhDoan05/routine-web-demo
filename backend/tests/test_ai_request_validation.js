@@ -60,7 +60,7 @@ test('rejects invalid or oversized conversation history', async () => {
   assert.equal(invalidProducts.statusCode, 400);
 });
 
-test('rejects an image over 5 MB', async () => {
+test('rejects an image over 4 MB', async () => {
   const oversizedImage = `data:image/png;base64,${'A'.repeat(7 * 1024 * 1024)}`;
   const response = await submit({ message: 'Tư vấn ảnh này', image: oversizedImage });
   assert.equal(response.statusCode, 400);

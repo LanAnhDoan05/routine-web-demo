@@ -1,0 +1,21 @@
+{
+  "currency": "VND",
+  "source": "ESTIMATED",
+  "description": "Giá tham khảo đề xuất cho catalog nhập thử nghiệm; Admin cần xác nhận trước khi kinh doanh.",
+  "categoryPrices": {
+    "ao-khoac": 699000,
+    "ao-len": 499000,
+    "ao-ni": 499000,
+    "ao-vest": 899000,
+    "quan-jean": 599000,
+    "quan-kaki": 599000,
+    "quan-ni": 499000,
+    "quan-tay": 599000,
+    "quan-vai": 499000,
+    "dam": 699000,
+    "giay-dep": 699000,
+    "non": 299000,
+    "tui-vi": 499000,
+    "vo-tat": 79000
+  }
+}

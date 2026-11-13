@@ -215,6 +215,7 @@ async function getRelatedProducts(id, limit = 4) {
 }
 
 function validateVariants(variants) {
+  if (variants === undefined || variants === null || variants === '') return;
   if (!Array.isArray(variants) || !variants.length || variants.some((variant) => (
     !variant.sku || !String(variant.sku).trim() ||
     !(variant.colorName || variant.color || variant.colorId) ||
@@ -251,11 +252,12 @@ function normalizeVariants(variants) {
   }));
 }
 
-function normalizeImages(images, productId) {
+async function normalizeImages(images, productId) {
+  const fallbackImages = ['/images/products/default-product.svg'];
   if (!Array.isArray(images) || !images.length || images.some((image) => typeof image !== 'string' || !image.trim())) {
-    throw badRequest('Sản phẩm cần ít nhất một đường dẫn ảnh hợp lệ');
+    return fallbackImages;
   }
-  return processImageArray(images, productId)
+  return (await processImageArray(images, productId))
     .map((image) => typeof image === 'string' ? image : image.url || '')
     .filter(Boolean);
 }
@@ -274,7 +276,7 @@ async function createProduct(productData = {}) {
     badge = null,
     description,
     variants,
-    status = 'DRAFT',
+    status = 'ACTIVE',
   } = productData;
 
   if (typeof name !== 'string' || !name.trim()) throw badRequest('Tên sản phẩm không được để trống');
@@ -288,10 +290,12 @@ async function createProduct(productData = {}) {
   validateVariants(variants);
 
   const productId = `p-${randomUUID()}`;
-  const imageUrls = normalizeImages(images, productId);
+  const imageUrls = await normalizeImages(images, productId);
   const categoryRecord = await resolveCategory(category);
-  const resolvedColors = colors.length ? colors : [...new Set(variants.map((variant) => variant.colorName || variant.color || variant.colorId))];
-  const resolvedSizes = sizes.length ? sizes : [...new Set(variants.map((variant) => variant.sizeName || variant.size || variant.sizeId))];
+  const variantList = Array.isArray(variants) ? variants : [];
+  const resolvedColors = colors.length ? colors : [...new Set(variantList.map((variant) => variant.colorName || variant.color || variant.colorId))];
+  const resolvedSizes = sizes.length ? sizes : [...new Set(variantList.map((variant) => variant.sizeName || variant.size || variant.sizeId))];
+  const normalizedVariants = Array.isArray(variants) ? normalizeVariants(variants) : [];
   const created = await prisma.product.create({
     data: {
       id: productId,
@@ -311,12 +315,12 @@ async function createProduct(productData = {}) {
       images: imageUrls,
       colors: resolvedColors,
       sizes: resolvedSizes,
-      stockQuantity: variants.reduce((sum, variant) => sum + Number(variant.stockQuantity), 0),
+      stockQuantity: normalizedVariants.length ? normalizedVariants.reduce((sum, variant) => sum + Number(variant.stockQuantity), 0) : Number(productData.stockQuantity || 0),
       status,
       isFeatured: Boolean(productData.isFeatured),
       rating: 0,
       reviewCount: 0,
-      variants: { create: normalizeVariants(variants) },
+      ...(normalizedVariants.length > 0 ? { variants: { create: normalizedVariants } } : {}),
     },
     include: { category: true, variants: true },
   });
@@ -372,7 +376,7 @@ async function updateProduct(id, updateData = {}) {
     data.categoryId = resolved.id;
     data.categorySlug = resolved.slug;
   }
-  if (updateData.images !== undefined) data.images = normalizeImages(updateData.images, id);
+  if (updateData.images !== undefined) data.images = await normalizeImages(updateData.images, id);
   if (updateData.variants !== undefined) {
     validateVariants(updateData.variants);
     data.variants = { deleteMany: {}, create: normalizeVariants(updateData.variants) };

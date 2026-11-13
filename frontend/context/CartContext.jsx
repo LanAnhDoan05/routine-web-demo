@@ -120,8 +120,8 @@ export function CartProvider({ children }) {
         mainImg = product.image;
       }
 
-      const selectedSize = size || product.sizes?.[0] || "M";
-      const selectedColor = color || product.colors?.[0] || "Đen";
+      const selectedSize = size || product.sizes?.[0] || "";
+      const selectedColor = color || product.colors?.[0] || "";
       const lineId = makeCartLineId(product.id, selectedSize, selectedColor);
 
       // Cập nhật State tức thì (Optimistic UI)

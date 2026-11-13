@@ -1,5 +1,6 @@
 const prisma = require('../config/prisma');
 const aiService = require('../services/aiService');
+const conversationService = require('../services/conversationService');
 const { sendSuccess, sendError } = require('../utils/response');
 
 const MAX_MESSAGE_LENGTH = 2000;
@@ -7,7 +8,7 @@ const MAX_HISTORY_ITEMS = 12;
 const MAX_HISTORY_TEXT_LENGTH = 2000;
 const MAX_HISTORY_PRODUCTS = 12;
 const MAX_HISTORY_PRODUCT_NAME_LENGTH = 150;
-const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
+const MAX_IMAGE_BYTES = 4 * 1024 * 1024;
 
 /**
  * Controller trò chuyện đa lượt với Trợ lý Thời trang AI Stylist
@@ -15,7 +16,7 @@ const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
  */
 async function chat(req, res, next) {
   try {
-    const { message, history, currentProductId, userPreferences, image } = req.body;
+    const { message, history, currentProductId, userPreferences, image, conversationId } = req.body;
     const chatMessage = typeof message === 'string' ? message.trim() : '';
     if (!chatMessage && !image) {
       return sendError(res, 'Vui lòng nhập nội dung câu hỏi hoặc gửi ảnh cho AI Stylist', 400);
@@ -56,13 +57,18 @@ async function chat(req, res, next) {
         imageMatch[1].length > maxEncodedImageLength ||
         Buffer.from(imageMatch[1], 'base64').length > MAX_IMAGE_BYTES
       ) {
-        return sendError(res, 'Ảnh phải là JPEG, PNG hoặc WebP và không vượt quá 5 MB', 400);
+        return sendError(res, 'Ảnh phải là JPEG, PNG hoặc WebP và không vượt quá 4 MB', 400);
       }
     }
     if (currentProductId !== undefined && currentProductId !== null && (
       typeof currentProductId !== 'string' || currentProductId.length > 191
     )) {
       return sendError(res, 'Mã sản phẩm không hợp lệ', 400);
+    }
+    if (conversationId !== undefined && conversationId !== null && (
+      typeof conversationId !== 'string' || conversationId.length > 36
+    )) {
+      return sendError(res, 'Mã hội thoại không hợp lệ', 400);
     }
     if (userPreferences !== undefined && userPreferences !== null && (
       typeof userPreferences !== 'object' || Array.isArray(userPreferences)
@@ -74,44 +80,49 @@ async function chat(req, res, next) {
       ...(typeof userPreferences.gender === 'string' ? { gender: userPreferences.gender.slice(0, 30) } : {}),
       ...(typeof userPreferences.style === 'string' ? { style: userPreferences.style.slice(0, 50) } : {}),
     } : null;
-    const safeHistory = (history || []).map((entry) => ({
-      role: entry.role,
-      text: entry.text,
-      ...(entry.outfitId ? { outfitId: entry.outfitId } : {}),
-      ...(entry.outfitTitle ? { outfitTitle: entry.outfitTitle } : {}),
-      ...(entry.products ? { products: entry.products } : {}),
-    }));
-
     // Tự động nạp giới tính và gu phong cách từ tài khoản đã đăng nhập trong MySQL
     if (req.userId && (!resolvedPreferences || !resolvedPreferences.gender)) {
-      try {
-        const dbUser = await prisma.user.findUnique({
-          where: { id: req.userId },
-          select: { gender: true, stylePreference: true },
-        });
-        if (dbUser) {
-          resolvedPreferences = {
-            ...(resolvedPreferences || {}),
-            gender: dbUser.gender || 'unisex',
-            style: resolvedPreferences?.style || dbUser.stylePreference || 'minimal',
-          };
-        }
-      } catch (err) {
-        console.warn('[aiController] Lỗi tìm user profile:', err.message);
+      const dbUser = await prisma.user.findUnique({
+        where: { id: req.userId },
+        select: { gender: true, stylePreference: true },
+      });
+      if (dbUser) {
+        resolvedPreferences = {
+          ...(resolvedPreferences || {}),
+          gender: dbUser.gender || 'unisex',
+          style: resolvedPreferences?.style || dbUser.stylePreference || 'minimal',
+        };
       }
     }
 
+    const conversation = await conversationService.startCustomerTurn(req, {
+      conversationId,
+      text: chatMessage || '[Khách gửi ảnh]',
+      image,
+    });
+    const conversationHistory = await conversationService.getRecentHistory(req, conversation);
     const result = await aiService.chatWithStylist({
       message: chatMessage,
-      history: safeHistory,
+      history: conversationHistory,
       currentProductId: currentProductId || null,
       userPreferences: resolvedPreferences,
       image: image || null,
     });
 
+    const persistedTurn = await conversationService.completeAssistantTurn(
+      req,
+      conversation,
+      result
+    );
+
     return sendSuccess(
       res,
-      result,
+      {
+        ...result,
+        message: persistedTurn.message,
+        conversationId: persistedTurn.conversationId,
+        handoffOffer: persistedTurn.handoffOffer,
+      },
       'Phản hồi từ AI Stylist thành công',
       200
     );

@@ -1,4 +1,5 @@
 const prisma = require('../config/prisma');
+const addressService = require('./addressService');
 
 // In-memory status store cho user nếu CSDL chưa kết nối (id -> status)
 const userStatusStore = new Map();
@@ -171,7 +172,6 @@ async function getCustomerById(id) {
     user = await prisma.user.findUnique({
       where: { id },
       include: {
-        addresses: true,
         orders: {
           orderBy: { createdAt: 'desc' },
           include: { items: true },
@@ -179,11 +179,27 @@ async function getCustomerById(id) {
       },
     });
     if (user) {
-      addresses = user.addresses || [];
       userOrders = user.orders || [];
+      addresses = await addressService.getAddresses(id);
     }
   } catch (err) {
-    user = null;
+    try {
+      user = await prisma.user.findUnique({
+        where: { id },
+        include: {
+          orders: {
+            orderBy: { createdAt: 'desc' },
+            include: { items: true },
+          },
+        },
+      });
+      if (user) {
+        userOrders = user.orders || [];
+        addresses = await addressService.getAddresses(id);
+      }
+    } catch (fallbackError) {
+      user = null;
+    }
   }
 
   if (!user) {

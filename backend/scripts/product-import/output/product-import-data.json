@@ -1,0 +1,4010 @@
+[
+  {
+    "productCode": "IMPORT-3991915EF2F8",
+    "candidateName": "áo khoác nam mẫu 1",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003048.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003059.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003111.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003135.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003145.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_1_anh_chup_man_hinh_2026_09_16_003206.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5BB2D1F91CFC",
+    "candidateName": "áo khoác nam mẫu 10",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103119.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103130.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103139.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103154.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103213.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_10_anh_chup_man_hinh_2026_09_16_103228.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6CE5E21714E6",
+    "candidateName": "áo khoác nam mẫu 11",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103650.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103703.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103711.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103723.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103732.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_11_anh_chup_man_hinh_2026_09_16_103739.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8CA5B24E3CA3",
+    "candidateName": "áo khoác nam mẫu 12",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110112.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110137.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110151.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110215.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110223.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_12_anh_chup_man_hinh_2026_09_16_110338.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F82240C58898",
+    "candidateName": "áo khoác nam mẫu 13",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111327.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111339.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111351.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111513.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111522.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111532.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111542.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111555.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111606.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_13_anh_chup_man_hinh_2026_09_16_111617.png"
+    ],
+    "imageCount": 10,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8536199B9238",
+    "candidateName": "áo khoác nam mẫu 14",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_14_anh_chup_man_hinh_2026_09_16_112801.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_14_anh_chup_man_hinh_2026_09_16_112814.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_14_anh_chup_man_hinh_2026_09_16_112825.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_14_anh_chup_man_hinh_2026_09_16_112837.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-362B437E703A",
+    "candidateName": "áo khoác nam mẫu 15",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113414.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113426.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113434.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113450.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113502.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113510.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113518.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_15_anh_chup_man_hinh_2026_09_16_113528.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BD1BA44E6566",
+    "candidateName": "áo khoác nam mẫu 16",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_16_anh_chup_man_hinh_2026_09_16_113834.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_16_anh_chup_man_hinh_2026_09_16_113854.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_16_anh_chup_man_hinh_2026_09_16_113909.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_16_anh_chup_man_hinh_2026_09_16_113919.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E2B2183C8C8B",
+    "candidateName": "áo khoác nam mẫu 2",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091257.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091306.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091322.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091359.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091435.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_2_anh_chup_man_hinh_2026_09_16_091448.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-07EF3D9142E5",
+    "candidateName": "áo khoác nam mẫu 3",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_anh_chup_man_hinh_2026_09_16_091926.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_anh_chup_man_hinh_2026_09_16_092129.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_anh_chup_man_hinh_2026_09_16_092141.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_anh_chup_man_hinh_2026_09_16_093202.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_anh_chup_man_hinh_2026_09_16_093214.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4D9FE8D069D8",
+    "candidateName": "áo khoác nam mẫu 3",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_3_mint.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5DCA55CD7598",
+    "candidateName": "áo khoác nam mẫu 4",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092418.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092430.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092440.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092450.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092501.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_4_anh_chup_man_hinh_2026_09_16_092557.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-7C0A0A7145DD",
+    "candidateName": "áo khoác nam mẫu 5",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093638.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093649.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093657.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093710.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093720.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093739.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_5_anh_chup_man_hinh_2026_09_16_093749.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4A576D0C91FE",
+    "candidateName": "áo khoác nam mẫu 6",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_6_anh_chup_man_hinh_2026_09_16_094529.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_6_anh_chup_man_hinh_2026_09_16_094540.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_6_anh_chup_man_hinh_2026_09_16_094555.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_6_anh_chup_man_hinh_2026_09_16_094612.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6388E9089EEF",
+    "candidateName": "áo khoác nam mẫu 6",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_6_light.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6908DD67FBF7",
+    "candidateName": "áo khoác nam mẫu 7",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_7_anh_chup_man_hinh_2026_09_16_095333.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_7_anh_chup_man_hinh_2026_09_16_095346.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_7_anh_chup_man_hinh_2026_09_16_095355.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_7_anh_chup_man_hinh_2026_09_16_095412.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_7_anh_chup_man_hinh_2026_09_16_095423.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-084527F2B0B1",
+    "candidateName": "áo khoác nam mẫu 8",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_8_anh_chup_man_hinh_2026_09_16_100106.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_8_anh_chup_man_hinh_2026_09_16_100118.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_8_anh_chup_man_hinh_2026_09_16_100143.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_8_anh_chup_man_hinh_2026_09_16_100151.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_8_anh_chup_man_hinh_2026_09_16_100159.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-9CC5F8D50571",
+    "candidateName": "áo khoác nam mẫu 9",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_9_anh_chup_man_hinh_2026_09_16_101404.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_9_anh_chup_man_hinh_2026_09_16_101412.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_9_anh_chup_man_hinh_2026_09_16_101425.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_khoac_9_anh_chup_man_hinh_2026_09_16_101437.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-0C462C77ABFE",
+    "candidateName": "áo len nam mẫu 1",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_17_155024.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_17_155040.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_17_155051.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_17_155100.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-CBF5982D5C55",
+    "candidateName": "áo len nam mẫu 3",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155543.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155553.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155601.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155616.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155635.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_17_155646.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6B1E244FF91D",
+    "candidateName": "áo len nam mẫu 4",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155804.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155812.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155822.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155829.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155840.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_17_155848.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-79D8CA2B7CA1",
+    "candidateName": "áo len nam mẫu 5",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_17_160251.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_17_160300.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_17_160310.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3D66A478AD93",
+    "candidateName": "áo len nam mẫu 6",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_18_093125.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_18_093143.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_18_093155.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1732A7C1BE0F",
+    "candidateName": "áo len nam mẫu 7",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093329.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093337.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093346.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093355.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093404.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_18_093416.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C2CC92F09D6C",
+    "candidateName": "áo len nam mẫu 8",
+    "categorySlugHint": "ao-len",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093700.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093711.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093720.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093731.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093740.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_18_093751.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-ADCEFCEE66A8",
+    "candidateName": "áo nỉ nam mẫu 1",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133048.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133056.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133113.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133122.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133153.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_1_anh_chup_man_hinh_2026_09_16_133201.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-81FDC45FA026",
+    "candidateName": "áo nỉ nam mẫu 2",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133437.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133449.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133459.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133512.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133523.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133538.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_2_anh_chup_man_hinh_2026_09_16_133546.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6999FA3E87E8",
+    "candidateName": "áo nỉ nam mẫu 3",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_3_anh_chup_man_hinh_2026_09_16_133853.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_3_anh_chup_man_hinh_2026_09_16_133902.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_3_anh_chup_man_hinh_2026_09_16_133920.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3FB82F3C85A5",
+    "candidateName": "áo nỉ nam mẫu 4",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134538.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134550.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134601.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134613.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134644.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134654.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134709.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134731.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134741.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_4_anh_chup_man_hinh_2026_09_16_134750.png"
+    ],
+    "imageCount": 10,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-166E7BE2E692",
+    "candidateName": "áo nỉ nam mẫu 5",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_134943.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_134953.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135002.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135010.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135025.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135038.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135052.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_ni_ao_ni_5_anh_chup_man_hinh_2026_09_16_135100.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3F0880C420BE",
+    "candidateName": "áo vest nam mẫu 1",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_154915.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_154926.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_154935.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_154944.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E9FBF1260BFD",
+    "candidateName": "áo vest nam mẫu 2",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155430.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155438.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155447.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155457.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155531.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155538.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155546.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155555.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155604.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_25_155611.png"
+    ],
+    "imageCount": 10,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-93417FE98AF9",
+    "candidateName": "áo vest nam mẫu 3",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155810.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155818.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155825.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155833.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155843.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155851.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_25_155900.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BE82E9B242AE",
+    "candidateName": "áo vest nam mẫu 4",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_4_anh_chup_man_hinh_2026_09_25_160154.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_4_anh_chup_man_hinh_2026_09_25_160201.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_4_anh_chup_man_hinh_2026_09_25_160209.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_4_anh_chup_man_hinh_2026_09_25_160219.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_4_anh_chup_man_hinh_2026_09_25_160227.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-7C47E85BB3AB",
+    "candidateName": "áo vest nam mẫu 5",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_5_anh_chup_man_hinh_2026_09_25_160333.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_5_anh_chup_man_hinh_2026_09_25_160345.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_5_anh_chup_man_hinh_2026_09_25_160355.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_5_anh_chup_man_hinh_2026_09_25_160403.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3F87CF63AC9C",
+    "candidateName": "áo vest nam mẫu 6",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_6_anh_chup_man_hinh_2026_09_25_160655.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_6_anh_chup_man_hinh_2026_09_25_160702.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_6_anh_chup_man_hinh_2026_09_25_160714.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_ao_vest_ao_vest_6_anh_chup_man_hinh_2026_09_25_160725.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-023F7F059D60",
+    "candidateName": "quần jeans nam mẫu 1",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_24_093457.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_24_093519.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_24_093536.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_24_093551.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B1FE366572C8",
+    "candidateName": "quần jeans nam mẫu 10",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_24_101107.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_24_101116.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_24_101203.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_24_101219.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-30193C82582A",
+    "candidateName": "quần jeans nam mẫu 11",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_24_101417.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_24_101425.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_24_101435.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_24_101453.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5652AB194234",
+    "candidateName": "quần jeans nam mẫu 12",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_24_101917.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_24_101925.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_24_101945.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_24_101955.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-371708F64789",
+    "candidateName": "quần jeans nam mẫu 13",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_24_102201.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_24_102213.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_24_102227.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_24_102237.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8A884D110CB4",
+    "candidateName": "quần jeans nam mẫu 2",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_093925.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_093938.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094015.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094025.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094039.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094049.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094113.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_24_094122.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-09B9D9512849",
+    "candidateName": "quần jeans nam mẫu 3",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_24_094717.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_24_094732.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_24_094742.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_24_094754.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-50C58C84C882",
+    "candidateName": "quần jeans nam mẫu 4",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_24_094937.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_24_094946.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_24_094959.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_24_095009.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-A804BE11743B",
+    "candidateName": "quần jeans nam mẫu 5",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095301.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095310.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095317.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095325.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095439.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_24_095447.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-72B95E998819",
+    "candidateName": "quần jeans nam mẫu 6",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_24_095901.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_24_095916.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_24_095928.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_24_095942.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_24_095959.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E76693294FC7",
+    "candidateName": "quần jeans nam mẫu 7",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_24_100152.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_24_100204.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_24_100217.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_24_100226.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1D163194E471",
+    "candidateName": "quần jeans nam mẫu 8",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_24_100506.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_24_100516.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_24_100533.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_24_100544.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5DD91262F3F8",
+    "candidateName": "quần jeans nam mẫu 9",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_24_100828.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_24_100838.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_24_100848.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_24_100857.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_24_100907.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-94318F2D4F06",
+    "candidateName": "quần kaki nam mẫu 1",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104720.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104729.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104737.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104745.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104753.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104808.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_1_anh_chup_man_hinh_2026_09_24_104814.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-45E6754752FA",
+    "candidateName": "quần kaki nam mẫu 10",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_10_anh_chup_man_hinh_2026_09_25_154455.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_10_anh_chup_man_hinh_2026_09_25_154504.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_10_anh_chup_man_hinh_2026_09_25_154522.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_10_anh_chup_man_hinh_2026_09_25_154531.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-37C9B98D3F86",
+    "candidateName": "quần kaki nam mẫu 2",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145652.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145704.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145713.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145723.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145741.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145753.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_2_anh_chup_man_hinh_2026_09_25_145809.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F92326EE0381",
+    "candidateName": "quần kaki nam mẫu 3",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150113.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150125.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150135.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150151.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150204.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150217.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150228.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_3_anh_chup_man_hinh_2026_09_25_150242.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C92E0DEF8ECD",
+    "candidateName": "quần kaki nam mẫu 4",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_4_anh_chup_man_hinh_2026_09_25_150506.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_4_anh_chup_man_hinh_2026_09_25_150517.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_4_anh_chup_man_hinh_2026_09_25_150530.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_4_anh_chup_man_hinh_2026_09_25_150541.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-829C41880499",
+    "candidateName": "quần kaki nam mẫu 5",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151819.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151831.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151841.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151851.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151907.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151918.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151937.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_151949.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_152022.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_5_anh_chup_man_hinh_2026_09_25_152030.png"
+    ],
+    "imageCount": 10,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-94191D43EB61",
+    "candidateName": "quần kaki nam mẫu 6",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_6_anh_chup_man_hinh_2026_09_25_152409.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_6_anh_chup_man_hinh_2026_09_25_152421.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_6_anh_chup_man_hinh_2026_09_25_152430.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_6_anh_chup_man_hinh_2026_09_25_152452.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_6_anh_chup_man_hinh_2026_09_25_152500.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-2AE9887BEAE7",
+    "candidateName": "quần kaki nam mẫu 7",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153049.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153057.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153114.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153123.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153134.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153143.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153150.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153202.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153216.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153250.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_7_anh_chup_man_hinh_2026_09_25_153258.png"
+    ],
+    "imageCount": 11,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-11D7277897ED",
+    "candidateName": "quần kaki nam mẫu 8",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_8_anh_chup_man_hinh_2026_09_25_153849.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_8_anh_chup_man_hinh_2026_09_25_153857.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_8_anh_chup_man_hinh_2026_09_25_153906.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BDFF2D407941",
+    "candidateName": "quần kaki nam mẫu 9",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_9_anh_chup_man_hinh_2026_09_25_154148.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_9_anh_chup_man_hinh_2026_09_25_154156.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_kaki_quan_kaki_9_anh_chup_man_hinh_2026_09_25_154205.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F6977406182A",
+    "candidateName": "quần nỉ nam mẫu 1",
+    "categorySlugHint": "quan-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102701.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102708.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102718.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102726.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102800.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102809.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102816.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_1_anh_chup_man_hinh_2026_09_24_102828.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3A4284B208F6",
+    "candidateName": "quần nỉ nam mẫu 2",
+    "categorySlugHint": "quan-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103014.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103021.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103035.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103043.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103055.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103105.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103135.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_2_anh_chup_man_hinh_2026_09_24_103142.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5A6A07872A07",
+    "candidateName": "quần nỉ nam mẫu 3",
+    "categorySlugHint": "quan-ni",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103315.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103321.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103330.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103338.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103353.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_ni_quan_ni_3_anh_chup_man_hinh_2026_09_24_103405.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-94CBC8459DB0",
+    "candidateName": "quần tây nam mẫu 1",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161302.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161318.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161326.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161336.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161509.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_1_anh_chup_man_hinh_2026_09_18_161516.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6FE187095317",
+    "candidateName": "quần tây nam mẫu 2",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_074936.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075001.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075011.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075022.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075030.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075153.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075203.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_2_anh_chup_man_hinh_2026_09_24_075218.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-34E6B42BA119",
+    "candidateName": "quần tây nam mẫu 3",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075515.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075523.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075534.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075604.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075612.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_3_anh_chup_man_hinh_2026_09_24_075620.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-88A777CFEB95",
+    "candidateName": "quần tây nam mẫu 4",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_4_anh_chup_man_hinh_2026_09_24_080001.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_4_anh_chup_man_hinh_2026_09_24_080012.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_4_anh_chup_man_hinh_2026_09_24_080020.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_4_anh_chup_man_hinh_2026_09_24_080037.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_4_anh_chup_man_hinh_2026_09_24_080049.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-01442EA2A6F6",
+    "candidateName": "quần tây nam mẫu 5",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080251.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080302.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080310.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080319.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080346.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_5_anh_chup_man_hinh_2026_09_24_080355.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3AFF3DDB4452",
+    "candidateName": "quần tây nam mẫu 6",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080859.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080911.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080921.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080931.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080941.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_080959.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_6_anh_chup_man_hinh_2026_09_24_081008.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-83423A9694CD",
+    "candidateName": "quần tây nam mẫu 7",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_7_anh_chup_man_hinh_2026_09_24_081502.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_7_anh_chup_man_hinh_2026_09_24_081517.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_7_anh_chup_man_hinh_2026_09_24_081530.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_7_anh_chup_man_hinh_2026_09_24_081541.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E9E316727719",
+    "candidateName": "quần tây nam mẫu 8",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "men",
+    "images": [
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_8_anh_chup_man_hinh_2026_09_24_082032.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_8_anh_chup_man_hinh_2026_09_24_082045.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_8_anh_chup_man_hinh_2026_09_24_082055.png",
+      "/api/v1/media/routine_nam_20261107t221434z_1_001_nam_quan_tay_quan_tay_8_anh_chup_man_hinh_2026_09_24_082103.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-692E7CCE5E75",
+    "candidateName": "áo khoác nữ mẫu 1",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_1_anh_chup_man_hinh_2026_09_24_093022.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_1_anh_chup_man_hinh_2026_09_24_093059.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_1_anh_chup_man_hinh_2026_09_24_093120.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_1_anh_chup_man_hinh_2026_09_24_093135.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-7214C446DE53",
+    "candidateName": "áo khoác nữ mẫu 2",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_2_anh_chup_man_hinh_2026_09_24_094702.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_2_anh_chup_man_hinh_2026_09_24_094717.png"
+    ],
+    "imageCount": 2,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-50F2EC4514B0",
+    "candidateName": "áo khoác nữ mẫu 3",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095207.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095236.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095246.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095253.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095302.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_3_anh_chup_man_hinh_2026_09_24_095308.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-20EB30805F45",
+    "candidateName": "áo khoác nữ mẫu 4",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_4_anh_chup_man_hinh_2026_09_24_100451.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_4_anh_chup_man_hinh_2026_09_24_100500.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_4_anh_chup_man_hinh_2026_09_24_100507.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_4_anh_chup_man_hinh_2026_09_24_100515.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-60A23D5051D9",
+    "candidateName": "áo khoác nữ mẫu 5",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_5_anh_chup_man_hinh_2026_09_24_101011.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_5_anh_chup_man_hinh_2026_09_24_101017.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_5_anh_chup_man_hinh_2026_09_24_101024.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_5_anh_chup_man_hinh_2026_09_24_101031.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-946260F7019B",
+    "candidateName": "áo khoác nữ mẫu 6",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_6_anh_chup_man_hinh_2026_09_24_101149.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_6_anh_chup_man_hinh_2026_09_24_101203.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_6_anh_chup_man_hinh_2026_09_24_101210.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1B457C9F851C",
+    "candidateName": "áo khoác nữ mẫu 7",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_7_anh_chup_man_hinh_2026_09_24_102247.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_7_anh_chup_man_hinh_2026_09_24_102253.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_7_anh_chup_man_hinh_2026_09_24_102302.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_7_anh_chup_man_hinh_2026_09_24_102307.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8C235D7AD71A",
+    "candidateName": "áo khoác nữ mẫu 8",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_8_anh_chup_man_hinh_2026_09_24_102829.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_8_anh_chup_man_hinh_2026_09_24_102833.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_8_anh_chup_man_hinh_2026_09_24_102910.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_8_anh_chup_man_hinh_2026_09_24_102915.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-512D4FBEF6A1",
+    "candidateName": "áo khoác nữ mẫu 9",
+    "categorySlugHint": "ao-khoac",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_9_anh_chup_man_hinh_2026_09_24_103313.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_9_anh_chup_man_hinh_2026_09_24_103319.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_9_anh_chup_man_hinh_2026_09_24_103327.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_khoac_ao_khoac_9_anh_chup_man_hinh_2026_09_24_103333.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-0BA844481246",
+    "candidateName": "áo len nữ mẫu 1",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_25_162255.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_25_162305.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_25_162311.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_1_anh_chup_man_hinh_2026_09_25_162324.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6119CD1B93FF",
+    "candidateName": "áo len nữ mẫu 10",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_10_anh_chup_man_hinh_2026_09_25_165301.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_10_anh_chup_man_hinh_2026_09_25_165308.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_10_anh_chup_man_hinh_2026_09_25_165315.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F5675495DF62",
+    "candidateName": "áo len nữ mẫu 11",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_11_anh_chup_man_hinh_2026_09_25_165449.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_11_anh_chup_man_hinh_2026_09_25_165457.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_11_anh_chup_man_hinh_2026_09_25_165505.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_11_anh_chup_man_hinh_2026_09_25_165519.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_11_anh_chup_man_hinh_2026_09_25_165526.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4B224F9440EB",
+    "candidateName": "áo len nữ mẫu 12",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165720.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165729.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165735.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165742.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165751.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_12_anh_chup_man_hinh_2026_09_25_165758.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-D648D4A0A7F9",
+    "candidateName": "áo len nữ mẫu 2",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_2_anh_chup_man_hinh_2026_09_25_162614.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_2_anh_chup_man_hinh_2026_09_25_162627.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_2_anh_chup_man_hinh_2026_09_25_162636.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_2_anh_chup_man_hinh_2026_09_25_162643.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-2EA31111F8D7",
+    "candidateName": "áo len nữ mẫu 3",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162831.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162838.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162844.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162852.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162902.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162912.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162925.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_3_anh_chup_man_hinh_2026_09_25_162931.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-DC72C7AF01B8",
+    "candidateName": "áo len nữ mẫu 4",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163108.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163114.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163156.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163206.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163214.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163225.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163233.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163241.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163251.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_4_anh_chup_man_hinh_2026_09_25_163301.png"
+    ],
+    "imageCount": 10,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E53FCB74B8EA",
+    "candidateName": "áo len nữ mẫu 5",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_25_163801.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_25_163808.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_25_163816.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_5_anh_chup_man_hinh_2026_09_25_163827.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-285068491614",
+    "candidateName": "áo len nữ mẫu 6",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164052.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164058.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164107.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164113.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164132.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_6_anh_chup_man_hinh_2026_09_25_164145.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6472BED52DC0",
+    "candidateName": "áo len nữ mẫu 7",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_25_164357.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_25_164405.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_25_164423.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_7_anh_chup_man_hinh_2026_09_25_164444.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6B07AED95494",
+    "candidateName": "áo len nữ mẫu 8",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164617.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164625.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164634.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164644.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164650.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_8_anh_chup_man_hinh_2026_09_25_164701.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5AF714194E34",
+    "candidateName": "áo len nữ mẫu 9",
+    "categorySlugHint": "ao-len",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_9_anh_chup_man_hinh_2026_09_25_165048.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_9_anh_chup_man_hinh_2026_09_25_165054.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_9_anh_chup_man_hinh_2026_09_25_165102.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_len_ao_len_9_anh_chup_man_hinh_2026_09_25_165108.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-79301D99FE08",
+    "candidateName": "áo nỉ nữ mẫu 104318",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_1_screenshot_2026_09_24_104318.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-69FA63A4D697",
+    "candidateName": "áo nỉ nữ mẫu 104322",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_1_screenshot_2026_09_24_104322.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-9DA493B84AB6",
+    "candidateName": "áo nỉ nữ mẫu 105005",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_2_screenshot_2026_09_24_105005.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-AE9C876862E0",
+    "candidateName": "áo nỉ nữ mẫu 105024",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_2_screenshot_2026_09_24_105024.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C293D5C5F1A6",
+    "candidateName": "áo nỉ nữ mẫu 105029",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_2_screenshot_2026_09_24_105029.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6E8DC9ADFE93",
+    "candidateName": "áo nỉ nữ mẫu 105303",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_2_screenshot_2026_09_24_105303.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F0C6108BB1C9",
+    "candidateName": "áo nỉ nữ mẫu 105307",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_2_screenshot_2026_09_24_105307.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E45EFC0490BA",
+    "candidateName": "áo nỉ nữ mẫu 105121",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_3_screenshot_2026_09_24_105121.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C1543639908D",
+    "candidateName": "áo nỉ nữ mẫu 105137",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_3_screenshot_2026_09_24_105137.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6A8E8D73B6B9",
+    "candidateName": "áo nỉ nữ mẫu 105141",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_3_screenshot_2026_09_24_105141.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-0A5E87F636AB",
+    "candidateName": "áo nỉ nữ mẫu 105143",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_3_screenshot_2026_09_24_105143.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-21A0E5E9A9D7",
+    "candidateName": "áo nỉ nữ mẫu 105147",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_3_screenshot_2026_09_24_105147.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FA9A1D39A364",
+    "candidateName": "áo nỉ nữ mẫu 105535",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105535.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C98485E0DEB5",
+    "candidateName": "áo nỉ nữ mẫu 105539",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105539.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-7A76E154353B",
+    "candidateName": "áo nỉ nữ mẫu 105546",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105546.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1C540FE9128F",
+    "candidateName": "áo nỉ nữ mẫu 105551",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105551.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-48DB492C0F33",
+    "candidateName": "áo nỉ nữ mẫu 105556",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105556.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-319C799C5580",
+    "candidateName": "áo nỉ nữ mẫu 105559",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105559.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BADA3CA20641",
+    "candidateName": "áo nỉ nữ mẫu 105604",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105604.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3D003D94AA75",
+    "candidateName": "áo nỉ nữ mẫu 105608",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105608.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-EC10984B515E",
+    "candidateName": "áo nỉ nữ mẫu 105613",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105613.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-EAC0D6815B25",
+    "candidateName": "áo nỉ nữ mẫu 105619",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_4_screenshot_2026_09_24_105619.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4CCBBFF59662",
+    "candidateName": "áo nỉ nữ mẫu 110131",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110131.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-058D917E9950",
+    "candidateName": "áo nỉ nữ mẫu 110136",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110136.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-085A4965719E",
+    "candidateName": "áo nỉ nữ mẫu 110141",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110141.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-477B2678E971",
+    "candidateName": "áo nỉ nữ mẫu 110146",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110146.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-2884E524CFAD",
+    "candidateName": "áo nỉ nữ mẫu 110150",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110150.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-30944B1758E7",
+    "candidateName": "áo nỉ nữ mẫu 110154",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110154.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-10DBBB44B4D3",
+    "candidateName": "áo nỉ nữ mẫu 110159",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110159.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-72AB003DC199",
+    "candidateName": "áo nỉ nữ mẫu 110203",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110203.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-62BE5418FAF8",
+    "candidateName": "áo nỉ nữ mẫu 110209",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110209.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-60D3FBBF799D",
+    "candidateName": "áo nỉ nữ mẫu 110215",
+    "categorySlugHint": "ao-ni",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_ni_ao_ni_5_screenshot_2026_09_24_110215.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-455334BD74B7",
+    "candidateName": "áo vest nữ mẫu 1",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_172949.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_172954.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_173001.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_1_anh_chup_man_hinh_2026_09_25_173010.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FBAD982B634B",
+    "candidateName": "áo vest nữ mẫu 2",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021228.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021236.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021248.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021258.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021358.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_2_anh_chup_man_hinh_2026_09_26_021407.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-19E1EBEFF8C5",
+    "candidateName": "áo vest nữ mẫu 3",
+    "categorySlugHint": "ao-vest",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_26_022757.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_26_022807.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_ao_vest_ao_vest_3_anh_chup_man_hinh_2026_09_26_022814.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 899000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-45058238EED1",
+    "candidateName": "đầm nữ mẫu 1",
+    "categorySlugHint": "dam",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171512.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171521.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171529.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171541.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171602.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_1_anh_chup_man_hinh_2026_09_25_171609.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-5ACDADC3DD0B",
+    "candidateName": "đầm nữ mẫu 2",
+    "categorySlugHint": "dam",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_2_anh_chup_man_hinh_2026_09_25_171747.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_2_anh_chup_man_hinh_2026_09_25_171758.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_2_anh_chup_man_hinh_2026_09_25_171812.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_2_anh_chup_man_hinh_2026_09_25_171820.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C12595889D29",
+    "candidateName": "đầm nữ mẫu 3",
+    "categorySlugHint": "dam",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172045.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172052.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172100.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172106.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172119.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_3_anh_chup_man_hinh_2026_09_25_172127.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-0E3F04A99210",
+    "candidateName": "đầm nữ mẫu 4",
+    "categorySlugHint": "dam",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_4_anh_chup_man_hinh_2026_09_25_172440.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_4_anh_chup_man_hinh_2026_09_25_172450.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_4_anh_chup_man_hinh_2026_09_25_172507.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_dam_dam_4_anh_chup_man_hinh_2026_09_25_172544.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BDF77D3159AD",
+    "candidateName": "quần jeans nữ mẫu 1",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_26_024257.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_26_024305.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_26_024330.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_1_anh_chup_man_hinh_2026_09_26_024430.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-967D1837B8D7",
+    "candidateName": "quần jeans nữ mẫu 10",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_27_170154.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_27_170211.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_10_anh_chup_man_hinh_2026_09_27_170240.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-DF3DE1FAF6A5",
+    "candidateName": "quần jeans nữ mẫu 11",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_27_170451.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_27_170500.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_27_170508.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_11_anh_chup_man_hinh_2026_09_27_170542.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B2168212E9BA",
+    "candidateName": "quần jeans nữ mẫu 12",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_27_170802.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_27_170809.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_27_170816.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_12_anh_chup_man_hinh_2026_09_27_170824.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3E8CD5981E28",
+    "candidateName": "quần jeans nữ mẫu 13",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171026.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171034.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171041.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171047.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171055.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171102.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171158.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_13_anh_chup_man_hinh_2026_09_27_171211.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-A1EFD221CC70",
+    "candidateName": "quần jeans nữ mẫu 14",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_14_anh_chup_man_hinh_2026_09_27_171518.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_14_anh_chup_man_hinh_2026_09_27_171526.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_14_anh_chup_man_hinh_2026_09_27_171535.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_14_anh_chup_man_hinh_2026_09_27_171549.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-005DE3D1B846",
+    "candidateName": "quần jeans nữ mẫu 15",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_15_anh_chup_man_hinh_2026_09_27_173335.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_15_anh_chup_man_hinh_2026_09_27_173348.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_15_anh_chup_man_hinh_2026_09_27_173359.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_15_anh_chup_man_hinh_2026_09_27_173417.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-95CDEE3CFF4A",
+    "candidateName": "quần jeans nữ mẫu 2",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024803.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024815.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024828.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024836.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024846.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024855.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_2_anh_chup_man_hinh_2026_09_26_024905.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-D4C7F3D9EDB0",
+    "candidateName": "quần jeans nữ mẫu 3",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025418.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025425.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025500.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025509.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025516.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_3_anh_chup_man_hinh_2026_09_26_025530.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B5706FECFC95",
+    "candidateName": "quần jeans nữ mẫu 4",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_26_025931.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_26_025938.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_26_025945.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_26_025954.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_4_anh_chup_man_hinh_2026_09_26_030006.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-28AD38C046F8",
+    "candidateName": "quần jeans nữ mẫu 5",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_26_030217.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_26_030225.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_26_030232.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_26_030242.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_5_anh_chup_man_hinh_2026_09_26_030252.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-CBC07D0B134B",
+    "candidateName": "quần jeans nữ mẫu 6",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_26_030810.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_26_030819.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_26_030828.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_6_anh_chup_man_hinh_2026_09_26_030843.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-971590360DCD",
+    "candidateName": "quần jeans nữ mẫu 7",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_27_165349.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_27_165400.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_27_165412.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_7_anh_chup_man_hinh_2026_09_27_165425.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-89422070B4FE",
+    "candidateName": "quần jeans nữ mẫu 8",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_27_165714.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_27_165724.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_27_165736.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_8_anh_chup_man_hinh_2026_09_27_165746.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-9EA7E5A2F002",
+    "candidateName": "quần jeans nữ mẫu 9",
+    "categorySlugHint": "quan-jean",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_27_165937.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_27_165947.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_27_165954.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_jean_quan_jean_9_anh_chup_man_hinh_2026_09_27_170010.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3718B8E0BEDD",
+    "candidateName": "quần kaki nữ mẫu 1",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_1_anh_chup_man_hinh_2026_09_27_175407.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_1_anh_chup_man_hinh_2026_09_27_175417.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_1_anh_chup_man_hinh_2026_09_27_175425.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_1_anh_chup_man_hinh_2026_09_27_175432.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-EFA425229A80",
+    "candidateName": "quần kaki nữ mẫu 2",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_2_anh_chup_man_hinh_2026_09_27_175600.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_2_anh_chup_man_hinh_2026_09_27_175608.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_2_anh_chup_man_hinh_2026_09_27_175624.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-77B0D6376B3C",
+    "candidateName": "quần kaki nữ mẫu 3",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175811.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175818.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175828.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175836.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175845.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_3_anh_chup_man_hinh_2026_09_27_175853.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B19228248059",
+    "candidateName": "quần kaki nữ mẫu 4",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_4_anh_chup_man_hinh_2026_09_27_180039.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_4_anh_chup_man_hinh_2026_09_27_180045.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_4_anh_chup_man_hinh_2026_09_27_180055.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_4_anh_chup_man_hinh_2026_09_27_180103.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-39A214744D55",
+    "candidateName": "quần kaki nữ mẫu 5",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180246.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180254.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180321.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180328.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180336.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_5_anh_chup_man_hinh_2026_09_27_180345.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-0B736A92A6CA",
+    "candidateName": "quần kaki nữ mẫu 6",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180534.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180542.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180554.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180608.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180617.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_6_anh_chup_man_hinh_2026_09_27_180626.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-A8FC13592C1F",
+    "candidateName": "quần kaki nữ mẫu 7",
+    "categorySlugHint": "quan-kaki",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180755.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180802.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180808.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180817.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180826.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_kaki_q_kaki_7_anh_chup_man_hinh_2026_09_27_180834.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-50997D0D8E8C",
+    "candidateName": "quần tây nữ mẫu 1",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_1_anh_chup_man_hinh_2026_09_27_181244.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_1_anh_chup_man_hinh_2026_09_27_181253.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_1_anh_chup_man_hinh_2026_09_27_181302.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B9C8F8C7FC57",
+    "candidateName": "quần tây nữ mẫu 2",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_2_anh_chup_man_hinh_2026_09_27_181445.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_2_anh_chup_man_hinh_2026_09_27_181455.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_2_anh_chup_man_hinh_2026_09_27_181504.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_2_anh_chup_man_hinh_2026_09_27_181513.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B501A7EB5913",
+    "candidateName": "quần tây nữ mẫu 3",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_3_anh_chup_man_hinh_2026_09_27_181637.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_3_anh_chup_man_hinh_2026_09_27_181653.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_3_anh_chup_man_hinh_2026_09_27_181703.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_3_anh_chup_man_hinh_2026_09_27_181711.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C012510A7F80",
+    "candidateName": "quần tây nữ mẫu 4",
+    "categorySlugHint": "quan-tay",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_4_anh_chup_man_hinh_2026_09_27_181836.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_4_anh_chup_man_hinh_2026_09_27_181842.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_4_anh_chup_man_hinh_2026_09_27_181850.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_tay_qt_4_anh_chup_man_hinh_2026_09_27_181858.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 599000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-22ADC9135FAF",
+    "candidateName": "quần vải nữ mẫu 1",
+    "categorySlugHint": "quan-vai",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_1_anh_chup_man_hinh_2026_09_27_173706.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_1_anh_chup_man_hinh_2026_09_27_173716.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_1_anh_chup_man_hinh_2026_09_27_173731.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_1_anh_chup_man_hinh_2026_09_27_173744.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8052494C6E95",
+    "candidateName": "quần vải nữ mẫu 2",
+    "categorySlugHint": "quan-vai",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_173910.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_173923.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_173931.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_173954.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_174022.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_174029.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_2_anh_chup_man_hinh_2026_09_27_174037.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-15A82A3BD9E9",
+    "candidateName": "quần vải nữ mẫu 3",
+    "categorySlugHint": "quan-vai",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_3_anh_chup_man_hinh_2026_09_27_174232.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_3_anh_chup_man_hinh_2026_09_27_174245.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_3_anh_chup_man_hinh_2026_09_27_174303.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_3_anh_chup_man_hinh_2026_09_27_174311.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_3_anh_chup_man_hinh_2026_09_27_174323.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FF37099DBCCA",
+    "candidateName": "quần vải nữ mẫu 4",
+    "categorySlugHint": "quan-vai",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_4_anh_chup_man_hinh_2026_09_27_174450.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_4_anh_chup_man_hinh_2026_09_27_174500.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_4_anh_chup_man_hinh_2026_09_27_174531.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_4_anh_chup_man_hinh_2026_09_27_174548.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_4_anh_chup_man_hinh_2026_09_27_174554.png"
+    ],
+    "imageCount": 5,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8A551CFAC032",
+    "candidateName": "quần vải nữ mẫu 5",
+    "categorySlugHint": "quan-vai",
+    "genderHint": "women",
+    "images": [
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_5_anh_chup_man_hinh_2026_09_27_174834.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_5_anh_chup_man_hinh_2026_09_27_174844.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_5_anh_chup_man_hinh_2026_09_27_174901.png",
+      "/api/v1/media/routine_nu_20261107t221437z_1_001_nu_quan_vai_qv_5_anh_chup_man_hinh_2026_09_27_174911.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-169669B0D3A1",
+    "candidateName": "giày dép mẫu 1",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_1_anh_chup_man_hinh_2026_09_27_182644.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_1_anh_chup_man_hinh_2026_09_27_182652.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_1_anh_chup_man_hinh_2026_09_27_182659.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-92AB1792ABE1",
+    "candidateName": "giày dép mẫu 2",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_2_anh_chup_man_hinh_2026_09_27_182837.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_2_anh_chup_man_hinh_2026_09_27_182842.png"
+    ],
+    "imageCount": 2,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1D48890A37B5",
+    "candidateName": "giày dép mẫu 3",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_3_anh_chup_man_hinh_2026_09_27_183003.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4A0728D17073",
+    "candidateName": "giày dép mẫu 4",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_4_anh_chup_man_hinh_2026_09_27_183250.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_4_anh_chup_man_hinh_2026_09_27_183258.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_4_anh_chup_man_hinh_2026_09_27_183305.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-52D3828645D3",
+    "candidateName": "giày dép mẫu 4",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_4_brown.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-842CCEC34436",
+    "candidateName": "giày dép mẫu 5",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_5_anh_chup_man_hinh_2026_09_27_183450.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_5_anh_chup_man_hinh_2026_09_27_183457.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_5_anh_chup_man_hinh_2026_09_27_183504.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-77F11A8D70A6",
+    "candidateName": "giày dép mẫu 5",
+    "categorySlugHint": "giay-dep",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_giay_dep_dep_5_beige.png"
+    ],
+    "imageCount": 1,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 699000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BCC963AF77FB",
+    "candidateName": "mũ mẫu 1",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_1_anh_chup_man_hinh_2026_09_28_013347.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_1_anh_chup_man_hinh_2026_09_28_013353.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_1_anh_chup_man_hinh_2026_09_28_013402.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_1_anh_chup_man_hinh_2026_09_28_013408.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-BD7C53C43EA3",
+    "candidateName": "mũ mẫu 10",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_10_anh_chup_man_hinh_2026_09_28_015749.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_10_anh_chup_man_hinh_2026_09_28_015755.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_10_anh_chup_man_hinh_2026_09_28_015802.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_10_anh_chup_man_hinh_2026_09_28_015808.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-467FBC211B5F",
+    "candidateName": "mũ mẫu 11",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_11_anh_chup_man_hinh_2026_09_28_020003.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_11_anh_chup_man_hinh_2026_09_28_020010.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_11_anh_chup_man_hinh_2026_09_28_020015.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_11_anh_chup_man_hinh_2026_09_28_020022.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F2AD67FC654A",
+    "candidateName": "mũ mẫu 12",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_12_anh_chup_man_hinh_2026_09_28_020148.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_12_anh_chup_man_hinh_2026_09_28_020154.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_12_anh_chup_man_hinh_2026_09_28_020200.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E4F20B62E436",
+    "candidateName": "mũ mẫu 13",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020334.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020341.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020346.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020354.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020403.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020409.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_13_anh_chup_man_hinh_2026_09_28_020416.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FBCD9BE0C860",
+    "candidateName": "mũ mẫu 14",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020639.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020646.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020653.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020706.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020713.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020720.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020734.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020743.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_14_anh_chup_man_hinh_2026_09_28_020751.png"
+    ],
+    "imageCount": 9,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E9F21241BADF",
+    "candidateName": "mũ mẫu 2",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013711.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013719.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013728.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013736.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013749.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013756.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_2_anh_chup_man_hinh_2026_09_28_013806.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-A110A1E3776F",
+    "candidateName": "mũ mẫu 3",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_3_anh_chup_man_hinh_2026_09_28_014002.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_3_anh_chup_man_hinh_2026_09_28_014011.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_3_anh_chup_man_hinh_2026_09_28_014020.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-7C4BABDD803D",
+    "candidateName": "mũ mẫu 4",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_4_anh_chup_man_hinh_2026_09_28_014258.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_4_anh_chup_man_hinh_2026_09_28_014308.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_4_anh_chup_man_hinh_2026_09_28_014335.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-15320338710D",
+    "candidateName": "mũ mẫu 5",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_5_anh_chup_man_hinh_2026_09_28_014434.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_5_anh_chup_man_hinh_2026_09_28_014441.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_5_anh_chup_man_hinh_2026_09_28_014450.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_5_anh_chup_man_hinh_2026_09_28_014501.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-EA961550B8EF",
+    "candidateName": "mũ mẫu 6",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014718.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014725.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014731.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014740.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014746.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014752.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014801.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014807.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014813.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014830.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014837.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_6_anh_chup_man_hinh_2026_09_28_014844.png"
+    ],
+    "imageCount": 12,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FFF91D691798",
+    "candidateName": "mũ mẫu 7",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_7_anh_chup_man_hinh_2026_09_28_015019.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_7_anh_chup_man_hinh_2026_09_28_015026.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_7_anh_chup_man_hinh_2026_09_28_015034.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_7_anh_chup_man_hinh_2026_09_28_015040.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E7F9A0C042F9",
+    "candidateName": "mũ mẫu 8",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015207.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015214.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015223.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015230.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015239.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015245.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015253.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_8_anh_chup_man_hinh_2026_09_28_015301.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-FE2804992373",
+    "candidateName": "mũ mẫu 9",
+    "categorySlugHint": "non",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015503.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015511.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015519.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015526.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015534.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015539.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015545.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_non_bang_do_mu_9_anh_chup_man_hinh_2026_09_28_015551.png"
+    ],
+    "imageCount": 8,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 299000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1298215A4179",
+    "candidateName": "túi ví mẫu 1",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_1_anh_chup_man_hinh_2026_09_28_010233.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_1_anh_chup_man_hinh_2026_09_28_010244.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_1_anh_chup_man_hinh_2026_09_28_010253.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4393AC3BF0F7",
+    "candidateName": "túi ví mẫu 2",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_2_anh_chup_man_hinh_2026_09_28_010436.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_2_anh_chup_man_hinh_2026_09_28_010535.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_2_anh_chup_man_hinh_2026_09_28_011615.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-53FD071E2148",
+    "candidateName": "túi ví mẫu 3",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_3_anh_chup_man_hinh_2026_09_28_011715.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_3_anh_chup_man_hinh_2026_09_28_011723.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_3_anh_chup_man_hinh_2026_09_28_011731.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_3_anh_chup_man_hinh_2026_09_28_011743.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-1FC8AFB834AD",
+    "candidateName": "túi ví mẫu 4",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_4_anh_chup_man_hinh_2026_09_28_011920.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_4_anh_chup_man_hinh_2026_09_28_011928.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_4_anh_chup_man_hinh_2026_09_28_012051.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_4_anh_chup_man_hinh_2026_09_28_012058.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6B75CE0CC16D",
+    "candidateName": "túi ví mẫu 5",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_5_anh_chup_man_hinh_2026_09_28_012208.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_5_anh_chup_man_hinh_2026_09_28_012215.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_5_anh_chup_man_hinh_2026_09_28_012223.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-382B7B922AE7",
+    "candidateName": "túi ví mẫu 6",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_6_anh_chup_man_hinh_2026_09_28_012420.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_6_anh_chup_man_hinh_2026_09_28_012428.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_6_anh_chup_man_hinh_2026_09_28_012437.png"
+    ],
+    "imageCount": 3,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-89CAAB6F8C45",
+    "candidateName": "túi ví mẫu 7",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_7_anh_chup_man_hinh_2026_09_28_012625.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_7_anh_chup_man_hinh_2026_09_28_012633.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_7_anh_chup_man_hinh_2026_09_28_012640.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_7_anh_chup_man_hinh_2026_09_28_012652.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-95D60B62363B",
+    "candidateName": "túi ví mẫu 8",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_8_anh_chup_man_hinh_2026_09_28_012817.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_8_anh_chup_man_hinh_2026_09_28_012824.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_8_anh_chup_man_hinh_2026_09_28_012830.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_8_anh_chup_man_hinh_2026_09_28_012842.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-2EC7A24D4D9E",
+    "candidateName": "túi ví mẫu 9",
+    "categorySlugHint": "tui-vi",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_9_anh_chup_man_hinh_2026_09_28_013131.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_9_anh_chup_man_hinh_2026_09_28_013141.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_9_anh_chup_man_hinh_2026_09_28_013148.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_tui_vi_balo_tui_9_anh_chup_man_hinh_2026_09_28_013157.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 499000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-62F5FC9A1976",
+    "candidateName": "vớ tất mẫu 1",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021400.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021406.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021414.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021421.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021428.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_1_anh_chup_man_hinh_2026_09_28_021434.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8148B5E46588",
+    "candidateName": "vớ tất mẫu 10",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_10_anh_chup_man_hinh_2026_09_28_024826.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_10_anh_chup_man_hinh_2026_09_28_024834.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_10_anh_chup_man_hinh_2026_09_28_024844.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_10_anh_chup_man_hinh_2026_09_28_024851.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-562A1F91AC37",
+    "candidateName": "vớ tất mẫu 11",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_11_anh_chup_man_hinh_2026_09_28_025043.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_11_anh_chup_man_hinh_2026_09_28_025048.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_11_anh_chup_man_hinh_2026_09_28_025056.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_11_anh_chup_man_hinh_2026_09_28_025101.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-C1666D78560D",
+    "candidateName": "vớ tất mẫu 12",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_12_anh_chup_man_hinh_2026_09_28_025220.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_12_anh_chup_man_hinh_2026_09_28_025229.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_12_anh_chup_man_hinh_2026_09_28_025237.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_12_anh_chup_man_hinh_2026_09_28_025243.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F5EEFB9ECE71",
+    "candidateName": "vớ tất mẫu 13",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025355.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025401.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025406.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025417.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025423.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025429.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025440.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025446.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_13_anh_chup_man_hinh_2026_09_28_025452.png"
+    ],
+    "imageCount": 9,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-DE22A539CA50",
+    "candidateName": "vớ tất mẫu 14",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_14_anh_chup_man_hinh_2026_09_28_025631.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_14_anh_chup_man_hinh_2026_09_28_025637.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_14_anh_chup_man_hinh_2026_09_28_025646.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_14_anh_chup_man_hinh_2026_09_28_025652.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-6C0363419394",
+    "candidateName": "vớ tất mẫu 15",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025849.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025856.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025902.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025911.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025923.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025931.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_15_anh_chup_man_hinh_2026_09_28_025938.png"
+    ],
+    "imageCount": 7,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-3D89D7397CEE",
+    "candidateName": "vớ tất mẫu 16",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030141.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030147.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030155.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030200.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030207.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_16_anh_chup_man_hinh_2026_09_28_030213.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-2C19A6311014",
+    "candidateName": "vớ tất mẫu 2",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023049.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023056.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023105.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023110.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023120.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_2_anh_chup_man_hinh_2026_09_28_023126.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-267064EBAF6F",
+    "candidateName": "vớ tất mẫu 3",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023316.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023323.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023330.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023336.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023344.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_3_anh_chup_man_hinh_2026_09_28_023349.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-F1943F717004",
+    "candidateName": "vớ tất mẫu 4",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_4_anh_chup_man_hinh_2026_09_28_023502.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_4_anh_chup_man_hinh_2026_09_28_023508.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_4_anh_chup_man_hinh_2026_09_28_023517.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_4_anh_chup_man_hinh_2026_09_28_023524.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-9C43ED898582",
+    "candidateName": "vớ tất mẫu 5",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023656.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023702.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023708.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023717.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023725.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_5_anh_chup_man_hinh_2026_09_28_023733.png"
+    ],
+    "imageCount": 6,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-B5DA448467C6",
+    "candidateName": "vớ tất mẫu 6",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_6_anh_chup_man_hinh_2026_09_28_023906.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_6_anh_chup_man_hinh_2026_09_28_023912.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_6_anh_chup_man_hinh_2026_09_28_023919.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_6_anh_chup_man_hinh_2026_09_28_023927.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-8E7AA07E1EF4",
+    "candidateName": "vớ tất mẫu 7",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_7_anh_chup_man_hinh_2026_09_28_024135.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_7_anh_chup_man_hinh_2026_09_28_024144.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_7_anh_chup_man_hinh_2026_09_28_024152.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_7_anh_chup_man_hinh_2026_09_28_024206.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-E81A176263CB",
+    "candidateName": "vớ tất mẫu 8",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_8_anh_chup_man_hinh_2026_09_28_024433.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_8_anh_chup_man_hinh_2026_09_28_024440.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_8_anh_chup_man_hinh_2026_09_28_024447.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_8_anh_chup_man_hinh_2026_09_28_024456.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  },
+  {
+    "productCode": "IMPORT-4C68E9BA4906",
+    "candidateName": "vớ tất mẫu 9",
+    "categorySlugHint": "vo-tat",
+    "genderHint": null,
+    "images": [
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_9_anh_chup_man_hinh_2026_09_28_024632.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_9_anh_chup_man_hinh_2026_09_28_024637.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_9_anh_chup_man_hinh_2026_09_28_024646.png",
+      "/api/v1/media/routine_phu_kien_20261107t221439z_1_001_phu_kien_vo_tat_vo_9_anh_chup_man_hinh_2026_09_28_024651.png"
+    ],
+    "imageCount": 4,
+    "imageRoleStatus": "UNVERIFIED",
+    "reviewStatus": "NEEDS_VISUAL_REVIEW",
+    "price": 79000,
+    "priceSource": "ESTIMATED",
+    "status": "DRAFT",
+    "stockQuantity": 0
+  }
+]

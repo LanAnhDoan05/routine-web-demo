@@ -22,8 +22,8 @@ export default function InteractiveOutfitCard({ outfit }) {
     const initial = {};
     products.forEach((p) => {
       initial[p.id || p.productId] = {
-        size: p.selectedSize || (Array.isArray(p.sizes) ? p.sizes[0] : "M"),
-        color: p.selectedColor || (Array.isArray(p.colors) ? p.colors[0] : "Đen"),
+        size: p.selectedSize || (Array.isArray(p.sizes) ? p.sizes[0] : "") || "",
+        color: p.selectedColor || (Array.isArray(p.colors) ? p.colors[0] : "") || "",
       };
     });
     return initial;
@@ -56,18 +56,34 @@ export default function InteractiveOutfitCard({ outfit }) {
     showToast(`❤️ Đã lưu ${count} món trong set đồ vào danh sách yêu thích!`);
   }
 
-  function handleSizeChange(prodId, size) {
+  function handleSizeChange(prodId, size, product) {
+    const variants = Array.isArray(product.variants) ? product.variants : [];
+    const currentColor = selections[prodId]?.color;
+    const matchingVariant = variants.find((variant) => variant.size === size && variant.color === currentColor)
+      || variants.find((variant) => variant.size === size);
     setSelections((prev) => ({
       ...prev,
-      [prodId]: { ...(prev[prodId] || {}), size },
+      [prodId]: { ...(prev[prodId] || {}), size, ...(matchingVariant ? { color: matchingVariant.color || "" } : {}) },
     }));
   }
 
-  function handleColorChange(prodId, color) {
+  function handleColorChange(prodId, color, product) {
+    const variants = Array.isArray(product.variants) ? product.variants : [];
+    const currentSize = selections[prodId]?.size;
+    const matchingVariant = variants.find((variant) => variant.color === color && variant.size === currentSize)
+      || variants.find((variant) => variant.color === color);
     setSelections((prev) => ({
       ...prev,
-      [prodId]: { ...(prev[prodId] || {}), color },
+      [prodId]: { ...(prev[prodId] || {}), color, ...(matchingVariant ? { size: matchingVariant.size || "" } : {}) },
     }));
+  }
+
+  function getSelectedVariant(product, selection) {
+    const variants = Array.isArray(product.variants) ? product.variants : [];
+    if (variants.length === 0) return null;
+    return variants.find((variant) => (
+      variant.size === selection?.size && variant.color === selection?.color
+    )) || null;
   }
 
   // 1-Click thêm toàn bộ set đồ vào giỏ hàng
@@ -79,7 +95,12 @@ export default function InteractiveOutfitCard({ outfit }) {
     products.forEach((p) => {
       const pid = p.id || p.productId;
       const sel = selections[pid] || {};
-      const success = addToCart(p, {
+      const selectedVariant = getSelectedVariant(p, sel);
+      if (Array.isArray(p.variants) && p.variants.length > 0 && !selectedVariant) return;
+      const cartProduct = selectedVariant
+        ? { ...p, price: selectedVariant.price, stockQuantity: selectedVariant.stockQuantity }
+        : p;
+      const success = addToCart(cartProduct, {
         size: sel.size,
         color: sel.color,
         quantity: 1,
@@ -101,17 +122,29 @@ export default function InteractiveOutfitCard({ outfit }) {
     }
     const pid = p.id || p.productId;
     const sel = selections[pid] || {};
-    const success = addToCart(p, {
+    const selectedVariant = getSelectedVariant(p, sel);
+    if (Array.isArray(p.variants) && p.variants.length > 0 && !selectedVariant) {
+      showToast("Vui lòng chọn tổ hợp size và màu còn hàng.");
+      return;
+    }
+    const cartProduct = selectedVariant
+      ? { ...p, price: selectedVariant.price, stockQuantity: selectedVariant.stockQuantity }
+      : p;
+    const success = addToCart(cartProduct, {
       size: sel.size,
       color: sel.color,
       quantity: 1,
     });
     if (success !== false) {
-      showToast(`Đã thêm "${p.name}" (${sel.size || "M"} - ${sel.color || "Đen"}) vào giỏ hàng!`);
+      showToast(`Đã thêm "${p.name}" vào giỏ hàng!`);
     }
   }
 
-  const total = products.reduce((sum, p) => sum + (Number(p.price) || 0), 0);
+  const total = products.reduce((sum, product) => {
+    const pid = product.id || product.productId;
+    const selectedVariant = getSelectedVariant(product, selections[pid]);
+    return sum + (Number(selectedVariant?.price ?? product.price) || 0);
+  }, 0);
 
   return (
     <div className={styles.interactiveOutfitCard}>
@@ -126,21 +159,35 @@ export default function InteractiveOutfitCard({ outfit }) {
       <div className={styles.outfitItemsList}>
         {products.map((item) => {
           const pid = item.id || item.productId;
-          const isItemOutOfStock = isProductOutOfStock(item);
           const sel = selections[pid] || {};
-          const sizes = Array.isArray(item.sizes) ? item.sizes : ["S", "M", "L", "XL"];
-          const colors = Array.isArray(item.colors) ? item.colors : ["Đen", "Trắng", "Xám"];
+          const sizes = Array.isArray(item.sizes) ? item.sizes : [];
+          const colors = Array.isArray(item.colors) ? item.colors : [];
+          const variants = Array.isArray(item.variants) ? item.variants : [];
+          const selectedVariant = getSelectedVariant(item, sel);
+          const availableSizes = variants.length > 0
+            ? [...new Set(variants.filter((variant) => variant.color === sel.color).map((variant) => variant.size).filter(Boolean))]
+            : sizes;
+          const availableColors = variants.length > 0
+            ? [...new Set(variants.filter((variant) => variant.size === sel.size).map((variant) => variant.color).filter(Boolean))]
+            : colors;
+          const displayedPrice = selectedVariant?.price ?? item.price;
+          const isItemOutOfStock = isProductOutOfStock({
+            ...item,
+            stockQuantity: selectedVariant?.stockQuantity ?? item.stockQuantity,
+          });
 
           return (
             <div key={pid} className={styles.outfitItemRow}>
               <Link href={`/product/${pid}`} className={styles.outfitItemThumb} style={{ position: "relative" }}>
-                <img
-                  src={item.image || "/images/placeholder.svg"}
-                  alt={item.name}
-                  style={{
-                    filter: isItemOutOfStock ? "grayscale(40%) blur(1px) opacity(0.65)" : "none"
-                  }}
-                />
+                {item.image && (
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    style={{
+                      filter: isItemOutOfStock ? "grayscale(40%) blur(1px) opacity(0.65)" : "none"
+                    }}
+                  />
+                )}
                 {isItemOutOfStock && (
                   <span
                     style={{
@@ -167,7 +214,7 @@ export default function InteractiveOutfitCard({ outfit }) {
                   {item.name}
                 </Link>
                 <div className={styles.outfitItemPrice}>
-                  {formatPrice(item.price)}
+                  {formatPrice(displayedPrice)}
                   {isItemOutOfStock && (
                     <span style={{ fontSize: 11, color: "#dc2626", fontWeight: 600, marginLeft: 6 }}>
                       (Hết hàng)
@@ -176,33 +223,37 @@ export default function InteractiveOutfitCard({ outfit }) {
                 </div>
 
                 <div className={styles.outfitItemSelectors}>
-                  <div className={styles.selectorGroup}>
-                    <label>Size:</label>
-                    <select
-                      value={sel.size}
-                      onChange={(e) => handleSizeChange(pid, e.target.value)}
-                      className={styles.miniSelect}
-                      disabled={isItemOutOfStock}
-                    >
-                      {sizes.map((s) => (
-                        <option key={s} value={s}>{s}</option>
-                      ))}
-                    </select>
-                  </div>
+                  {availableSizes.length > 0 && (
+                    <div className={styles.selectorGroup}>
+                      <label>Size:</label>
+                      <select
+                        value={sel.size}
+                        onChange={(e) => handleSizeChange(pid, e.target.value, item)}
+                        className={styles.miniSelect}
+                        disabled={isItemOutOfStock}
+                      >
+                        {availableSizes.map((s) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
 
-                  <div className={styles.selectorGroup}>
-                    <label>Màu:</label>
-                    <select
-                      value={sel.color}
-                      onChange={(e) => handleColorChange(pid, e.target.value)}
-                      className={styles.miniSelect}
-                      disabled={isItemOutOfStock}
-                    >
-                      {colors.map((c) => (
-                        <option key={c} value={c}>{c}</option>
-                      ))}
-                    </select>
-                  </div>
+                  {availableColors.length > 0 && (
+                    <div className={styles.selectorGroup}>
+                      <label>Màu:</label>
+                      <select
+                        value={sel.color}
+                        onChange={(e) => handleColorChange(pid, e.target.value, item)}
+                        className={styles.miniSelect}
+                        disabled={isItemOutOfStock}
+                      >
+                        {availableColors.map((c) => (
+                          <option key={c} value={c}>{c}</option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
 
                   <button
                     type="button"

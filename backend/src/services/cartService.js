@@ -1,32 +1,4 @@
 const prisma = require('../config/prisma');
-const { products: fallbackProducts } = require('../data/products');
-const couponService = require('./couponService');
-
-// Danh sách mã ưu đãi hợp lệ mặc định
-const AVAILABLE_COUPONS = {
-  ROUTINE10: {
-    code: 'ROUTINE10',
-    type: 'percent',
-    value: 10,
-    maxDiscount: 100000,
-    minOrderValue: 200000,
-    description: 'Giảm 10% tối đa 100k cho đơn từ 200k',
-  },
-  ROUTINE50K: {
-    code: 'ROUTINE50K',
-    type: 'fixed',
-    value: 50000,
-    minOrderValue: 300000,
-    description: 'Giảm 50.000đ cho đơn từ 300k',
-  },
-  FREESHIP: {
-    code: 'FREESHIP',
-    type: 'freeship',
-    value: 30000,
-    minOrderValue: 0,
-    description: 'Miễn phí vận chuyển toàn quốc',
-  },
-};
 
 /**
  * Phân tách identityId thành { userId } hoặc { guestSessionId }
@@ -49,6 +21,164 @@ function parseIdentity(identityId) {
  */
 function makeLineId(productId, size, color) {
   return `${productId}__${size || 'default'}__${color || 'default'}`;
+}
+
+function productArray(value) {
+  if (Array.isArray(value)) return value;
+  if (typeof value !== 'string' || !value.trim()) return [];
+  try {
+    const parsed = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function productOptions(value) {
+  return productArray(value).filter((option) => typeof option === 'string' && option.trim());
+}
+
+function cartError(message, statusCode) {
+  const error = new Error(message);
+  error.statusCode = statusCode;
+  return error;
+}
+
+function normalizeCartOption(value) {
+  if (value === null || value === undefined) return '';
+  return String(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[đĐ]/g, 'd')
+    .trim()
+    .toLowerCase();
+}
+
+function normalizeColorAlias(value) {
+  const normalized = normalizeCartOption(value);
+  const aliasMap = {
+    'trang': 'white',
+    'trang nhat': 'white',
+    'trắng': 'white',
+    'white': 'white',
+    'den': 'black',
+    'đen': 'black',
+    'black': 'black',
+    'xam': 'gray',
+    'xám': 'gray',
+    'gray': 'gray',
+    'grey': 'gray',
+    'be': 'beige',
+    'beige': 'beige',
+    'kem': 'cream',
+    'cream': 'cream',
+    'navy': 'navy',
+    'xanh navy': 'navy',
+    'blue': 'blue',
+    'xanh duong': 'blue',
+    'xanh dương': 'blue',
+    'nau': 'brown',
+    'brown': 'brown',
+    'xanh la': 'green',
+    'green': 'green',
+    'khaki': 'khaki',
+    'olive': 'olive',
+  };
+  return aliasMap[normalized] || normalized;
+}
+
+function normalizeSizeAlias(value) {
+  const normalized = normalizeCartOption(value);
+  const aliasMap = {
+    'xs': 'xs',
+    's': 's',
+    'm': 'm',
+    'l': 'l',
+    'xl': 'xl',
+    'xxl': 'xxl',
+    'xxxl': 'xxxl',
+    '29': '29',
+    '30': '30',
+    '31': '31',
+    '32': '32',
+    '33': '33',
+    '34': '34',
+    '35': '35',
+    '36': '36',
+    '37': '37',
+    '38': '38',
+    '39': '39',
+    '40': '40',
+  };
+  return aliasMap[normalized] || normalized;
+}
+
+function resolveCartSelection(product, { size, color, quantity }) {
+  if (!product || product.status !== 'ACTIVE') {
+    throw cartError('Sản phẩm không tồn tại hoặc không còn kinh doanh', 404);
+  }
+
+  const qty = Number(quantity);
+  if (!Number.isInteger(qty) || qty <= 0) {
+    throw cartError('Số lượng sản phẩm phải là số nguyên dương lớn hơn 0', 400);
+  }
+
+  const variants = Array.isArray(product.variants) ? product.variants : [];
+  if (variants.length > 0) {
+    const availableVariants = variants.filter((variant) => (
+      variant.status === 'ACTIVE' &&
+      Number.isInteger(Number(variant.stockQuantity)) &&
+      Number(variant.stockQuantity) > 0
+    ));
+    const selectedVariant = availableVariants.find((variant) => {
+      const variantSize = normalizeSizeAlias(variant.size);
+      const variantColor = normalizeColorAlias(variant.color);
+      const requestedSize = normalizeSizeAlias(size);
+      const requestedColor = normalizeColorAlias(color);
+      return variantSize === requestedSize && variantColor === requestedColor;
+    });
+    if (!selectedVariant) {
+      throw cartError('Size hoặc màu đã chọn không còn hàng', 400);
+    }
+
+    const availableStock = Number(selectedVariant.stockQuantity);
+    if (qty > availableStock) {
+      throw cartError('Sản phẩm không đủ tồn kho', 400);
+    }
+
+    return {
+      size: selectedVariant.size || null,
+      color: selectedVariant.color || null,
+      price: Number(selectedVariant.price),
+      availableStock,
+      quantity: qty,
+    };
+  }
+
+  const availableStock = Number(product.stockQuantity);
+  if (!Number.isInteger(availableStock) || availableStock < qty) {
+    throw cartError('Sản phẩm không đủ tồn kho hoặc không có dữ liệu tồn kho', 400);
+  }
+
+  const sizes = productOptions(product.sizes).map((option) => normalizeSizeAlias(option));
+  const colors = productOptions(product.colors).map((option) => normalizeColorAlias(option));
+  const requestedSize = normalizeSizeAlias(size);
+  const requestedColor = normalizeColorAlias(color);
+
+  if ((sizes.length > 0 && !size) || (colors.length > 0 && !color)) {
+    throw cartError('Vui lòng chọn size và màu từ thông tin sản phẩm', 400);
+  }
+  if ((size && !sizes.includes(requestedSize)) || (color && !colors.includes(requestedColor))) {
+    throw cartError('Size hoặc màu đã chọn không hợp lệ', 400);
+  }
+
+  return {
+    size: size || null,
+    color: color || null,
+    price: Number(product.price),
+    availableStock,
+    quantity: qty,
+  };
 }
 
 /**
@@ -93,8 +223,8 @@ async function calculateCartTotals(cart) {
     price: item.price,
     originalPrice: item.originalPrice || item.price,
     image: item.image || '',
-    size: item.size || 'M',
-    color: item.color || 'Đen',
+    size: item.size || null,
+    color: item.color || null,
     quantity: item.quantity,
     subtotal: item.price * item.quantity,
   }));
@@ -113,20 +243,9 @@ async function calculateCartTotals(cart) {
   let couponInfo = null;
 
   if (cart.appliedCoupon && subtotal > 0) {
-    let coupon = null;
-    try {
-      const dbCoupon = await prisma.coupon.findUnique({ where: { code: cart.appliedCoupon } });
-      if (dbCoupon && dbCoupon.isActive) {
-        coupon = dbCoupon;
-      }
-    } catch {
-      // ignore
-    }
-    if (!coupon) {
-      coupon = AVAILABLE_COUPONS[cart.appliedCoupon] || null;
-    }
+    const coupon = await prisma.coupon.findUnique({ where: { code: cart.appliedCoupon } });
 
-    if (coupon) {
+    if (coupon?.isActive) {
       if (subtotal >= coupon.minOrderValue) {
         if (coupon.type === 'percent') {
           discount = Math.min(Math.round((subtotal * coupon.value) / 100), coupon.maxDiscount || Infinity);
@@ -183,64 +302,23 @@ async function getCart(identityId) {
 /**
  * Thêm sản phẩm vào giỏ hàng MySQL
  */
-async function addItem(identityId, { productId, size, color, quantity = 1, image, name, price, category }) {
-  // 1. Tìm thông tin sản phẩm trong MySQL
-  let product = null;
-  if (productId) {
-    product = await prisma.product.findUnique({
-      where: { id: productId },
-    });
-  }
-
-  // Fallback nếu không có trong DB
-  if (!product) {
-    product = fallbackProducts.find((p) => p.id === productId);
-  }
-
-  if (!product) {
-    if (productId && (name || price)) {
-      product = {
-        id: productId,
-        name: name || 'Sản phẩm',
-        categorySlug: category || 'general',
-        gender: 'unisex',
-        price: Number(price) || 0,
-        originalPrice: Number(price) || 0,
-        images: image ? [image] : [],
-        sizes: size ? [size] : ['M'],
-        colors: color ? [color] : ['Đen'],
-      };
-    } else {
-      const error = new Error(`Không tìm thấy sản phẩm với ID: ${productId}`);
-      error.statusCode = 404;
-      throw error;
-    }
-  }
-
-  const qty = parseInt(quantity, 10);
-  if (isNaN(qty) || qty <= 0) {
-    const error = new Error('Số lượng sản phẩm phải là số nguyên dương lớn hơn 0');
-    error.statusCode = 400;
-    throw error;
-  }
+async function addItem(identityId, { productId, size, color, quantity = 1 }) {
+  const product = productId
+    ? await prisma.product.findFirst({
+      where: { id: productId, status: 'ACTIVE' },
+      include: { variants: true },
+    })
+    : null;
+  const selection = resolveCartSelection(product, { size, color, quantity });
 
   // Phân giải ảnh đại diện
-  let itemImage = image;
-  if (!itemImage) {
-    if (Array.isArray(product.images) && product.images.length > 0) {
-      itemImage = product.images[0];
-    } else if (typeof product.images === 'string') {
-      try {
-        const parsed = JSON.parse(product.images);
-        itemImage = Array.isArray(parsed) && parsed.length > 0 ? parsed[0] : product.images;
-      } catch {
-        itemImage = product.images;
-      }
-    }
-  }
+  const productImages = productArray(product.images)
+    .map((entry) => typeof entry === 'string' ? entry : entry?.url)
+    .filter((entry) => typeof entry === 'string' && entry.trim());
+  const itemImage = productImages[0] || '';
 
-  const selectedSize = size || (Array.isArray(product.sizes) ? product.sizes[0] : 'M');
-  const selectedColor = color || (Array.isArray(product.colors) ? product.colors[0] : 'Đen');
+  const selectedSize = selection.size;
+  const selectedColor = selection.color;
   const lineId = makeLineId(product.id, selectedSize, selectedColor);
 
   const cart = await getOrCreateCart(identityId);
@@ -255,11 +333,15 @@ async function addItem(identityId, { productId, size, color, quantity = 1, image
     },
   });
 
+  if ((existingItem?.quantity || 0) + selection.quantity > selection.availableStock) {
+    throw cartError('Số lượng vượt quá tồn kho hiện có', 400);
+  }
+
   if (existingItem) {
     await prisma.cartItem.update({
       where: { id: existingItem.id },
       data: {
-        quantity: existingItem.quantity + qty,
+        quantity: existingItem.quantity + selection.quantity,
         image: existingItem.image || itemImage || '',
       },
     });
@@ -270,14 +352,14 @@ async function addItem(identityId, { productId, size, color, quantity = 1, image
         productId: product.id,
         lineId,
         name: product.name,
-        category: product.categorySlug || product.categoryId || category || 'clothing',
+        category: product.categorySlug || product.categoryId || '',
         gender: product.gender || 'unisex',
-        price: Number(product.price),
-        originalPrice: product.originalPrice ? Number(product.originalPrice) : Number(product.price),
+        price: selection.price,
+        originalPrice: product.originalPrice ? Number(product.originalPrice) : selection.price,
         image: itemImage || '',
         size: selectedSize,
         color: selectedColor,
-        quantity: qty,
+        quantity: selection.quantity,
       },
     });
   }
@@ -432,18 +514,7 @@ async function applyCoupon(identityId, code) {
   }
 
   const normalizedCode = code.trim().toUpperCase();
-  let coupon = null;
-  try {
-    const dbCoupon = await prisma.coupon.findUnique({ where: { code: normalizedCode } });
-    if (dbCoupon && dbCoupon.isActive) {
-      coupon = dbCoupon;
-    }
-  } catch {
-    // ignore
-  }
-  if (!coupon) {
-    coupon = AVAILABLE_COUPONS[normalizedCode] || null;
-  }
+  const coupon = await prisma.coupon.findUnique({ where: { code: normalizedCode } });
 
   if (!coupon || coupon.isActive === false) {
     const error = new Error(`Mã giảm giá "${normalizedCode}" không hợp lệ hoặc đã hết hạn`);
@@ -580,5 +651,5 @@ module.exports = {
   applyCoupon,
   removeCoupon,
   mergeCart,
-  AVAILABLE_COUPONS,
+  resolveCartSelection,
 };

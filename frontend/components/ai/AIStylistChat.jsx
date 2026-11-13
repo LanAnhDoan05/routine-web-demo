@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import InteractiveOutfitCard from "./InteractiveOutfitCard";
 import { sendStylistChatMessage } from "@/lib/aiStylistService";
+import { fetchApi } from "@/lib/api";
 import { useUser } from "@/context/UserContext";
 import styles from "./AIStylistChat.module.css";
 
@@ -58,6 +59,25 @@ function getWelcomeConfig(user) {
   };
 }
 
+function renderMessageText(text) {
+  return String(text || "").split("\n").map((line, lineIndex) => {
+    const bullet = line.match(/^\s*[-*]\s+(.*)$/);
+    const content = bullet ? bullet[1] : line;
+    const formatted = content.split(/\*\*(.+?)\*\*/g).map((part, partIndex) => (
+      partIndex % 2 === 1
+        ? <strong key={`${lineIndex}-${partIndex}`}>{part}</strong>
+        : part
+    ));
+
+    return (
+      <span className={styles.messageLine} key={lineIndex}>
+        {bullet && <span className={styles.messageBullet}>• </span>}
+        {formatted}
+      </span>
+    );
+  });
+}
+
 export default function AIStylistChat({ initialPrompt = "", currentProductId = null, embedded = false }) {
   const { user, isLoggedIn, openAuthPrompt } = useUser();
   const welcome = getWelcomeConfig(user);
@@ -74,6 +94,9 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
 
   const [inputText, setInputText] = useState("");
   const [selectedImage, setSelectedImage] = useState(null);
+  const [conversationId, setConversationId] = useState(null);
+  const [handoffDecision, setHandoffDecision] = useState(null);
+  const [handoffLoading, setHandoffLoading] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showQuiz, setShowQuiz] = useState(false);
   const [quizStep, setQuizStep] = useState(1);
@@ -81,6 +104,42 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
 
   const messagesEndRef = useRef(null);
   const fileInputRef = useRef(null);
+  const handleSendMessageRef = useRef(null);
+  const seenStaffMessageIdsRef = useRef(new Set());
+  const conversationStorageKey = `routine_ai_conversation_${user?.id || "guest"}`;
+
+  useEffect(() => {
+    const savedConversationId = window.localStorage.getItem(conversationStorageKey);
+    setConversationId(savedConversationId);
+    setHandoffDecision(null);
+    seenStaffMessageIdsRef.current = new Set();
+  }, [conversationStorageKey]);
+
+  useEffect(() => {
+    if (!conversationId) return undefined;
+    let active = true;
+    async function restoreConversation() {
+      try {
+        const result = await fetchApi(`/ai/conversations/${conversationId}/messages`);
+        if (!active || !Array.isArray(result?.messages) || result.messages.length === 0) return;
+        const restoredMessages = result.messages.map((message) => ({
+          id: message.id,
+          role: message.role === "CUSTOMER" ? "user" : message.role === "STAFF" ? "staff" : "ai",
+          text: message.text,
+          image: message.metadata?.imageUrl || null,
+        }));
+        setMessages(restoredMessages);
+        if (result.handoffDecision) setHandoffDecision(result.handoffDecision);
+      } catch (error) {
+        if (active) console.error("[AIStylistChat] Unable to restore conversation:", error.message);
+      }
+    }
+
+    restoreConversation();
+    return () => {
+      active = false;
+    };
+  }, [conversationId]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -90,10 +149,49 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
     scrollToBottom();
   }, [messages, loading, showQuiz]);
 
+  useEffect(() => {
+    if (!conversationId || handoffDecision !== "ACCEPTED") return undefined;
+    let active = true;
+
+    async function pollStaffMessages() {
+      try {
+        const result = await fetchApi(`/ai/conversations/${conversationId}/messages`);
+        if (!active || !Array.isArray(result?.messages)) return;
+        const newMessages = result.messages
+          .filter((message) => message.role === "STAFF" && !seenStaffMessageIdsRef.current.has(message.id))
+          .map((message) => {
+            seenStaffMessageIdsRef.current.add(message.id);
+            return {
+              id: message.id,
+              role: "staff",
+              text: message.text,
+              image: message.metadata?.imageUrl || null,
+            };
+          });
+        if (newMessages.length > 0) {
+          setMessages((current) => [...current, ...newMessages]);
+        }
+      } catch (error) {
+        if (active) console.error("[AIStylistChat] Unable to refresh staff messages:", error.message);
+      }
+    }
+
+    pollStaffMessages();
+    const intervalId = window.setInterval(pollStaffMessages, 5000);
+    return () => {
+      active = false;
+      window.clearInterval(intervalId);
+    };
+  }, [conversationId, handoffDecision]);
+
+  useEffect(() => {
+    handleSendMessageRef.current = handleSendMessage;
+  });
+
   // Nếu có initialPrompt được truyền từ bên ngoài (ví dụ từ nút Complete The Look)
   useEffect(() => {
     if (initialPrompt && initialPrompt.trim()) {
-      handleSendMessage(initialPrompt.trim());
+      handleSendMessageRef.current?.(initialPrompt.trim());
     }
   }, [initialPrompt]);
 
@@ -104,8 +202,8 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
       alert('Vui lòng chọn ảnh JPEG, PNG hoặc WebP');
       return;
     }
-    if (file.size > 5 * 1024 * 1024) {
-      alert("Vui lòng chọn ảnh dung lượng dưới 5MB");
+    if (file.size > 4 * 1024 * 1024) {
+      alert("Vui lòng chọn ảnh dung lượng dưới 4MB");
       return;
     }
     const reader = new FileReader();
@@ -174,18 +272,34 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
         history: newHistory,
         currentProductId,
         image: imageToSend,
+        conversationId,
         userPreferences: user ? { gender: user.gender, style: user.stylePreference } : null,
       });
 
+      if (response.conversationId) {
+        setConversationId(response.conversationId);
+        window.localStorage.setItem(conversationStorageKey, response.conversationId);
+      }
+      const responseProducts = Array.isArray(response.products) ? response.products : [];
+      const displayOutfit = response.outfit || (responseProducts.length > 0
+        ? {
+          id: `products-${Date.now()}`,
+          title: responseProducts.length === 1 ? responseProducts[0].name : "Sản phẩm Routine phù hợp",
+          style: response.intent?.style || null,
+          products: responseProducts,
+          total: response.total || responseProducts.reduce((sum, product) => sum + Number(product.price || 0), 0),
+        }
+        : null);
       setMessages([
         ...updatedMessages,
         {
           id: `ai-${Date.now()}`,
           role: "ai",
           text: response.message,
-          outfit: response.outfit,
-          products: response.products,
+          outfit: displayOutfit,
+          products: responseProducts,
           followUps: response.followUps || [],
+          handoffOffer: response.handoffOffer === true,
         },
       ]);
     } catch (err) {
@@ -203,6 +317,39 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
     }
   }
 
+  async function handleHandoffDecision(consent) {
+    if (!conversationId || handoffLoading) return;
+    setHandoffLoading(true);
+    try {
+      await fetchApi(`/ai/conversations/${conversationId}/handoff`, {
+        method: "POST",
+        body: JSON.stringify({ consent }),
+      });
+      setHandoffDecision(consent ? "ACCEPTED" : "DECLINED");
+      setMessages((current) => [
+        ...current,
+        {
+          id: `handoff-${Date.now()}`,
+          role: "ai",
+          text: consent
+            ? "Routine đã ghi nhận sự đồng ý của bạn. Chuyên viên có thể tiếp nhận yêu cầu và phản hồi ngay trong cuộc trò chuyện này."
+            : "Đã rõ. Bạn có thể tiếp tục trò chuyện với AI Stylist.",
+        },
+      ]);
+    } catch (error) {
+      setMessages((current) => [
+        ...current,
+        {
+          id: `handoff-error-${Date.now()}`,
+          role: "ai",
+          text: `Chưa gửi được yêu cầu tư vấn: ${error.message}`,
+        },
+      ]);
+    } finally {
+      setHandoffLoading(false);
+    }
+  }
+
   function handleKeyDown(e) {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
@@ -217,25 +364,47 @@ export default function AIStylistChat({ initialPrompt = "", currentProductId = n
         {messages.map((msg) => (
           <div
             key={msg.id}
-            className={`${styles.chatBubbleWrapper} ${msg.role === "ai" ? styles.isAi : styles.isUser}`}
+            className={`${styles.chatBubbleWrapper} ${msg.role !== "user" ? styles.isAi : styles.isUser}`}
           >
-            {msg.role === "ai" && (
-              <div className={styles.stylistAvatar} title="Routine AI Stylist">
-                <span>R</span>
+            {msg.role !== "user" && (
+              <div className={styles.stylistAvatar} title={msg.role === "staff" ? "Chuyên viên Routine" : "Routine AI Stylist"}>
+                <span>{msg.role === "staff" ? "S" : "R"}</span>
               </div>
             )}
 
             <div className={styles.chatBubbleContent}>
-              <div className={`${styles.chatBubble} ${msg.role === "ai" ? styles.isAi : styles.isUser}`}>
+              <div className={`${styles.chatBubble} ${msg.role !== "user" ? styles.isAi : styles.isUser}`}>
+                {msg.role === "staff" && <strong>Chuyên viên Routine</strong>}
                 {msg.image && (
                   <img src={msg.image} alt="Uploaded outfit" className={styles.userImageThumb} />
                 )}
-                <p className={styles.bubbleText}>{msg.text}</p>
+                <div className={styles.bubbleText}>{renderMessageText(msg.text)}</div>
               </div>
 
               {/* Thẻ phối đồ tương tác trực quan */}
               {msg.outfit && msg.outfit.products && msg.outfit.products.length > 0 && (
                 <InteractiveOutfitCard outfit={msg.outfit} />
+              )}
+
+              {msg.handoffOffer && !handoffDecision && (
+                <div className={styles.chipsList}>
+                  <button
+                    type="button"
+                    className={styles.chipBtn}
+                    onClick={() => handleHandoffDecision(true)}
+                    disabled={handoffLoading}
+                  >
+                    Có, tôi muốn được tư vấn
+                  </button>
+                  <button
+                    type="button"
+                    className={styles.chipBtn}
+                    onClick={() => handleHandoffDecision(false)}
+                    disabled={handoffLoading}
+                  >
+                    Không, tôi tiếp tục trò chuyện với AI
+                  </button>
+                </div>
               )}
 
               {/* Gợi ý câu hỏi tiếp theo (Follow-up chips) & Quiz banner */}

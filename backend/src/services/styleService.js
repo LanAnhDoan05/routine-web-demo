@@ -134,7 +134,7 @@ async function createStyle(styleData) {
 
   const newId = `style-${generatedSlug}`;
   const rawImage = imageUrl || image || '/images/styles/basic.svg';
-  const img = processSingleImage(rawImage, `style_${generatedSlug}`);
+  const img = await processSingleImage(rawImage, `style_${generatedSlug}`);
 
   await prisma.$queryRawUnsafe(
     `INSERT INTO styles (id, slug, name, description, image, status, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW());`,
@@ -191,7 +191,7 @@ async function updateStyle(idOrSlug, updateData) {
   const nextDesc = updateData.description !== undefined ? updateData.description.trim() : current.description;
   const rawImage = updateData.imageUrl !== undefined ? updateData.imageUrl : (updateData.image !== undefined ? updateData.image : current.image);
   const nextImg = (updateData.imageUrl !== undefined || updateData.image !== undefined)
-    ? processSingleImage(rawImage, `style_${current.id}`)
+    ? await processSingleImage(rawImage, `style_${current.id}`)
     : (current.image || '');
   const nextStatus = (updateData.status || current.status || 'ACTIVE').toUpperCase();
 

@@ -23,41 +23,46 @@ function ensureUploadDirs() {
  * Chỉ trả về đường dẫn URL chuỗi ký tự (VD: '/uploads/img_123.jpg')
  * Tuyệt đối không để chuỗi base64 lọt vào database
  */
-function saveBase64ToFile(base64Str, prefix = 'img') {
+async function saveBase64ToFile(base64Str, prefix = 'img') {
   if (!base64Str || typeof base64Str !== 'string') return base64Str;
 
   if (!base64Str.startsWith('data:')) {
     return base64Str;
   }
 
-  ensureUploadDirs();
-
   const match = base64Str.match(/^data:([a-zA-Z0-9+.-]+\/[a-zA-Z0-9+.-]+);base64,(.+)$/);
-  if (!match) return base64Str;
+  if (!match) {
+    const error = new Error('Dữ liệu ảnh không đúng định dạng');
+    error.statusCode = 400;
+    throw error;
+  }
 
-  let mime = match[1].toLowerCase();
-  let ext = mime.split('/')[1] || 'jpg';
-  if (ext === 'jpeg') ext = 'jpg';
-  if (ext === 'svg+xml') ext = 'svg';
-  if (ext === 'x-icon' || ext === 'vnd.microsoft.icon') ext = 'ico';
-  if (ext === 'octet-stream') ext = 'jpg';
+  const mime = match[1].toLowerCase();
+  const extensions = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
+  const ext = extensions[mime];
+  if (!ext) {
+    const error = new Error('Chỉ chấp nhận ảnh JPEG, PNG hoặc WebP');
+    error.statusCode = 400;
+    throw error;
+  }
 
   const cleanPrefix = String(prefix).replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 20) || 'file';
   const filename = `${cleanPrefix}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}.${ext}`;
   const buffer = Buffer.from(match[2], 'base64');
-
-  // Lưu vào Database MySQL (bảng media_files)
-  try {
-    const mediaService = require('../services/mediaService');
-    mediaService.saveMediaFile({
-      filename,
-      mimetype: mime,
-      size: buffer.length,
-      buffer,
-    }).catch((e) => console.warn('[fileStorage] saveMediaFile async warning:', e.message));
-  } catch (dbErr) {
-    console.warn('[fileStorage] DB save error:', dbErr.message);
+  if (!buffer.length || buffer.length > 4 * 1024 * 1024) {
+    const error = new Error('Ảnh phải có dữ liệu và không vượt quá 4 MB');
+    error.statusCode = 400;
+    throw error;
   }
+
+  const mediaService = require('../services/mediaService');
+  const saved = await mediaService.saveMediaFile({
+    filename,
+    mimetype: mime,
+    size: buffer.length,
+    buffer,
+  });
+  ensureUploadDirs();
 
   // Tùy chọn lưu trên đĩa (an toàn trên Vercel với try/catch)
   try {
@@ -67,41 +72,41 @@ function saveBase64ToFile(base64Str, prefix = 'img') {
     // non-blocking trên Vercel / serverless
   }
 
-  return `/api/v1/media/${filename}`;
+  return saved.url;
 }
 
 /**
  * Xử lý mảng ảnh (cho Product, Review...):
  * Lưu mọi base64 thành file vật lý và trả về mảng chuỗi đường dẫn URL
  */
-function processImageArray(images, prefix = 'prod') {
+async function processImageArray(images, prefix = 'prod') {
   if (!Array.isArray(images)) return images;
 
-  return images.map((img, index) => {
+  return Promise.all(images.map(async (img, index) => {
     if (!img) return null;
 
     if (typeof img === 'string') {
-      return saveBase64ToFile(img, `${prefix}_${index + 1}`);
+      return await saveBase64ToFile(img, `${prefix}_${index + 1}`);
     }
 
     if (typeof img === 'object' && img.url) {
       return {
         ...img,
-        url: saveBase64ToFile(img.url, `${prefix}_${index + 1}`),
+        url: await saveBase64ToFile(img.url, `${prefix}_${index + 1}`),
       };
     }
 
     return img;
-  }).filter(Boolean);
+  })).then((result) => result.filter(Boolean));
 }
 
 /**
  * Xử lý 1 ảnh đơn (cho Category, Outfit, User Avatar...):
  * Trả về đường dẫn chuỗi URL sau khi đã lưu file vật lý
  */
-function processSingleImage(image, prefix = 'img') {
+async function processSingleImage(image, prefix = 'img') {
   if (!image || typeof image !== 'string') return image;
-  return saveBase64ToFile(image, prefix);
+  return await saveBase64ToFile(image, prefix);
 }
 
 /**

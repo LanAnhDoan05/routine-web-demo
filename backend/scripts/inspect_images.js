@@ -1,66 +1,89 @@
+// Script: Scan source images + DB products, build mapping, then replace images
 require('dotenv').config();
-const { PrismaClient } = require('@prisma/client');
 const fs = require('fs');
 const path = require('path');
+const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
-const FRONTEND_PUBLIC = path.resolve(__dirname, '../../frontend/public');
+const SOURCE_ROOT = 'C:\\Ảnh routine';
+const BACKEND_UPLOADS = path.resolve(__dirname, '../public/uploads');
+const FRONTEND_UPLOADS = path.resolve(__dirname, '../../frontend/public/uploads');
+
+// Step 1: Scan source directory structure
+function scanSourceDir(dir) {
+  const result = [];
+  if (!fs.existsSync(dir)) return result;
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  for (const item of items) {
+    const fullPath = path.join(dir, item.name);
+    if (item.isDirectory()) {
+      result.push(...scanSourceDir(fullPath));
+    } else if (item.isFile() && /\.(png|jpg|jpeg|webp|avif|gif)$/i.test(item.name)) {
+      // Extract category path info
+      const relPath = path.relative(SOURCE_ROOT, fullPath);
+      result.push({ fullPath, relPath, name: item.name, size: fs.statSync(fullPath).size });
+    }
+  }
+  return result;
+}
+
+// Step 2: Group source images by product folder
+function groupByProductFolder(files) {
+  const groups = {};
+  for (const f of files) {
+    const parts = f.relPath.split(path.sep);
+    // The product folder is the last directory before the filename
+    const productFolder = parts.slice(0, -1).join(path.sep);
+    if (!groups[productFolder]) groups[productFolder] = [];
+    groups[productFolder].push(f);
+  }
+  // Sort images in each group by name (to maintain order)
+  for (const key of Object.keys(groups)) {
+    groups[key].sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return groups;
+}
 
 async function main() {
-  // Check the specific categories that have empty images in DB
-  const emptyImageCats = ['cat-accessories', 'cat-blazer', 'cat-jacket', 'cat-jeans', 'cat-polo', 'cat-shirt', 'cat-shorts', 'cat-sneakers', 'cat-trousers', 'cat-tshirt'];
-
-  // For each, see what slug maps in frontend
-  const slugMappings = {
-    'cat-accessories': 'accessories',
-    'cat-blazer': 'blazer',
-    'cat-jacket': 'jacket',
-    'cat-jeans': 'jeans',
-    'cat-polo': 'polo',
-    'cat-shirt': 'shirt',
-    'cat-shorts': 'shorts',
-    'cat-sneakers': 'sneakers',
-    'cat-trousers': 'trousers',
-    'cat-tshirt': 'tshirt',
-  };
-
-  console.log('Checking category image fallbacks:');
-  for (const [catSlug, imgSlug] of Object.entries(slugMappings)) {
-    const svgPath = path.join(FRONTEND_PUBLIC, 'images', 'categories', `${imgSlug}.svg`);
-    const jpgPath = path.join(FRONTEND_PUBLIC, 'images', 'categories', `${imgSlug}.jpg`);
-    console.log(`- ${catSlug}: fallback /images/categories/${imgSlug}.svg exists = ${fs.existsSync(svgPath)}, .jpg = ${fs.existsSync(jpgPath)}`);
+  // Scan source images
+  console.log('=== SCANNING SOURCE DIRECTORY ===');
+  const allFiles = scanSourceDir(SOURCE_ROOT);
+  console.log(`Total source image files: ${allFiles.length}`);
+  
+  const groups = groupByProductFolder(allFiles);
+  const folderNames = Object.keys(groups);
+  console.log(`Total product folders: ${folderNames.length}`);
+  
+  // Show folder structure summary
+  const categories = {};
+  for (const folder of folderNames) {
+    const parts = folder.split(path.sep);
+    // parts[0] = zip folder name, parts[1] = gender folder, parts[2] = category, parts[3] = product name
+    // or parts[0] = zip name, parts[1] = main folder, then subfolders
+    const key = parts.slice(0, -1).join(' > ');
+    if (!categories[key]) categories[key] = [];
+    categories[key].push({ folder: parts[parts.length - 1], count: groups[folder].length });
+  }
+  
+  console.log('\n=== SOURCE FOLDER CATEGORIES ===');
+  for (const [cat, items] of Object.entries(categories)) {
+    console.log(`\n${cat}:`);
+    items.sort((a, b) => a.folder.localeCompare(b.folder, 'vi'));
+    for (const item of items) {
+      console.log(`  ${item.folder} (${item.count} images)`);
+    }
   }
 
-  // Check that /api/v1/media/ images URL format for products work correctly 
-  // The frontend uses these relative URLs, and Next.js rewrites /api/v1/media/* to backend
-  console.log('\nNext.js rewrites check:');
-  const nextConfig = fs.readFileSync(path.resolve(__dirname, '../../frontend/next.config.js'), 'utf-8');
-  console.log('next.config.js rewrite for /api/v1/media:', nextConfig.includes('/api/v1/media') ? 'YES' : 'NO');
-
-  // Check if there are products without images
-  const productsNoImages = await prisma.product.findMany({
-    where: { images: null },
-    select: { id: true, name: true }
-  });
-  console.log('\nProducts with NULL images:', productsNoImages.length);
-  if (productsNoImages.length > 0) {
-    productsNoImages.forEach(p => console.log(` - [${p.id}] ${p.name}`));
-  }
-
-  // Check which categories appear in categories?type=quick API response
-  const categories = await prisma.category.findMany({
+  // Get all products from DB  
+  console.log('\n=== DATABASE PRODUCTS ===');
+  const products = await prisma.product.findMany({
+    select: { id: true, name: true, gender: true, categorySlug: true, categoryId: true, images: true, description: true },
     orderBy: { createdAt: 'desc' }
   });
-
-  const standardQuickSlugs = ['new-arrivals', 'men', 'women', 'unisex', 'tops', 'bottoms', 'outerwear', 'accessories'];
-  console.log('\nQuick categories image check:');
-  for (const slug of standardQuickSlugs) {
-    const cat = categories.find(c => c.slug === slug);
-    const imgPath = path.join(FRONTEND_PUBLIC, 'images', 'categories', `${slug}.svg`);
-    const jpgPath = path.join(FRONTEND_PUBLIC, 'images', 'categories', `${slug}.jpg`);
-    const hasLocalImg = fs.existsSync(imgPath) || fs.existsSync(jpgPath);
-    const dbImage = cat ? cat.image : 'NOT IN DB';
-    console.log(`- ${slug}: DB image = "${dbImage}", local fallback exists = ${hasLocalImg}`);
+  console.log(`Total products in DB: ${products.length}`);
+  for (const p of products) {
+    const imgCount = Array.isArray(p.images) ? p.images.length : 0;
+    console.log(`  [${p.id}] ${p.name} | gender=${p.gender} | cat=${p.categorySlug || p.categoryId} | images=${imgCount}`);
   }
 }
 

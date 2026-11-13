@@ -1,0 +1,399 @@
+{
+  "inspectedAt": "2026-11-08T18:59:46.006Z",
+  "categories": [
+    {
+      "id": "accessories",
+      "slug": "accessories",
+      "name": "ACCESSORIES",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "ao",
+      "slug": "ao",
+      "name": "ÁO",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "ao-khoac",
+      "slug": "ao-khoac",
+      "name": "ÁO KHOÁC",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "bottoms",
+      "slug": "bottoms",
+      "name": "BOTTOMS",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "do-basic",
+      "slug": "do-basic",
+      "name": "ĐỒ BASIC",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "do-casual",
+      "slug": "do-casual",
+      "name": "ĐỒ CASUAL",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "do-cong-so",
+      "slug": "do-cong-so",
+      "name": "ĐỒ CÔNG SỞ",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "men",
+      "slug": "men",
+      "name": "MEN",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "new-arrivals",
+      "slug": "new-arrivals",
+      "name": "NEW ARRIVALS",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "outerwear",
+      "slug": "outerwear",
+      "name": "OUTERWEAR",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "phu-kien",
+      "slug": "phu-kien",
+      "name": "PHỤ KIỆN",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "quan",
+      "slug": "quan",
+      "name": "QUẦN",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "tops",
+      "slug": "tops",
+      "name": "TOPS",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "unisex",
+      "slug": "unisex",
+      "name": "UNISEX",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "vay",
+      "slug": "vay",
+      "name": "VÁY",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "women",
+      "slug": "women",
+      "name": "WOMEN",
+      "parentId": null,
+      "type": "standard"
+    },
+    {
+      "id": "cat-accessories",
+      "slug": "cat-accessories",
+      "name": "Accessories",
+      "parentId": "accessories",
+      "type": "standard"
+    },
+    {
+      "id": "cat-sneakers",
+      "slug": "cat-sneakers",
+      "name": "Sneakers",
+      "parentId": "accessories",
+      "type": "standard"
+    },
+    {
+      "id": "cat-jeans",
+      "slug": "cat-jeans",
+      "name": "Jeans",
+      "parentId": "bottoms",
+      "type": "standard"
+    },
+    {
+      "id": "cat-shorts",
+      "slug": "cat-shorts",
+      "name": "Shorts",
+      "parentId": "bottoms",
+      "type": "standard"
+    },
+    {
+      "id": "cat-trousers",
+      "slug": "cat-trousers",
+      "name": "Trousers",
+      "parentId": "bottoms",
+      "type": "standard"
+    },
+    {
+      "id": "cat-blazer",
+      "slug": "cat-blazer",
+      "name": "Blazer",
+      "parentId": "outerwear",
+      "type": "standard"
+    },
+    {
+      "id": "cat-jacket",
+      "slug": "cat-jacket",
+      "name": "Jacket",
+      "parentId": "outerwear",
+      "type": "standard"
+    },
+    {
+      "id": "cat-polo",
+      "slug": "cat-polo",
+      "name": "Polo Shirt",
+      "parentId": "tops",
+      "type": "standard"
+    },
+    {
+      "id": "cat-shirt",
+      "slug": "cat-shirt",
+      "name": "Shirt",
+      "parentId": "tops",
+      "type": "standard"
+    },
+    {
+      "id": "cat-tshirt",
+      "slug": "cat-tshirt",
+      "name": "T-Shirt",
+      "parentId": "tops",
+      "type": "standard"
+    }
+  ],
+  "productCount": 34,
+  "productStatusGroups": [
+    {
+      "_count": {
+        "_all": 34
+      },
+      "status": "ACTIVE"
+    }
+  ],
+  "genderGroups": [
+    {
+      "_count": {
+        "_all": 10
+      },
+      "gender": "unisex"
+    },
+    {
+      "_count": {
+        "_all": 8
+      },
+      "gender": "men"
+    },
+    {
+      "_count": {
+        "_all": 16
+      },
+      "gender": "women"
+    }
+  ],
+  "productSamples": [
+    {
+      "id": "p2913",
+      "name": "Áo Sweatshirt Nam Tay Dài Vải Nỉ Form Fitted",
+      "slug": "ao-sweatshirt-nam-tay-dai-vai-ni-form-fitted",
+      "categorySlug": "ao",
+      "gender": "men",
+      "status": "ACTIVE",
+      "price": 579000
+    },
+    {
+      "id": "p2048",
+      "name": "Quần denim nữ. Relax",
+      "slug": "quan-denim-nu-relax",
+      "categorySlug": "cat-jeans",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 849000
+    },
+    {
+      "id": "p0103",
+      "name": "Đầm Thun Nữ Tay Ngắn Cotton Dáng Suông",
+      "slug": "dam-thun-nu-tay-ngan-cotton-dang-suong",
+      "categorySlug": "vay",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 499000
+    },
+    {
+      "id": "p5265",
+      "name": "Đầm sát nách nữ xếp ly. A line",
+      "slug": "dam-sat-nach-nu-xep-ly-a-line",
+      "categorySlug": "vay",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 899000
+    },
+    {
+      "id": "p2723",
+      "name": "Đầm nữ cổ thuyền ngang form straight",
+      "slug": "dam-nu-co-thuyen-ngang-form-straight",
+      "categorySlug": "vay",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 899000
+    },
+    {
+      "id": "p9984",
+      "name": "Đầm Thun Slimme Nữ Cổ V Phối Kiểu Cổ Form Fitted",
+      "slug": "dam-thun-slimme-nu-co-v-phoi-kieu-co-form-fitted",
+      "categorySlug": "vay",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 579000
+    },
+    {
+      "id": "p4235",
+      "name": "Áo sơ mi tay dài nữ. Regular cropped",
+      "slug": "ao-so-mi-tay-dai-nu-regular-cropped",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 579000
+    },
+    {
+      "id": "p0316",
+      "name": "Áo khoác nữ recycle denim.Loose",
+      "slug": "ao-khoac-nu-recycle-denim-loose",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 899000
+    },
+    {
+      "id": "p6989",
+      "name": "Áo phao nữ chần bông cổ rời form regular",
+      "slug": "ao-phao-nu-chan-bong-co-roi-form-regular",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 999000
+    },
+    {
+      "id": "p8618",
+      "name": "Áo Khoác Nữ Có Mũ Tay Dài Form Regular",
+      "slug": "ao-khoac-nu-co-mu-tay-dai-form-regular",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 479000
+    },
+    {
+      "id": "p3680",
+      "name": "Áo Khoác Tay Dài Nữ Cao Cổ Phối Màu Form Loose",
+      "slug": "ao-khoac-tay-dai-nu-cao-co-phoi-mau-form-loose",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 499000
+    },
+    {
+      "id": "p5112",
+      "name": "Áo khoác thể thao nữ chống tia UV bo chun loose",
+      "slug": "ao-khoac-the-thao-nu-chong-tia-uv-bo-chun-loose",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 729000
+    },
+    {
+      "id": "p0947",
+      "name": "Áo Khoác Denim Nữ Dark Navy Cúc Gài Form Regular",
+      "slug": "ao-khoac-denim-nu-dark-navy-cuc-gai-form-regular",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 799000
+    },
+    {
+      "id": "p8436",
+      "name": "Áo Khoác Bomber Nam Da Lộn Khóa Kéo Form Regular",
+      "slug": "ao-khoac-bomber-nam-da-lon-khoa-keo-form-regular",
+      "categorySlug": "ao-khoac",
+      "gender": "men",
+      "status": "ACTIVE",
+      "price": 799000
+    },
+    {
+      "id": "p5439",
+      "name": "Áo khoác nữ. Regular",
+      "slug": "ao-khoac-nu-regular",
+      "categorySlug": "ao-khoac",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 579000
+    },
+    {
+      "id": "p2615",
+      "name": "Túi tái chế Coffee Lovers 5 đa năng. Freesize",
+      "slug": "tui-tai-che-coffee-lovers-5-da-nang-freesize",
+      "categorySlug": "phu-kien",
+      "gender": "unisex",
+      "status": "ACTIVE",
+      "price": 49000
+    },
+    {
+      "id": "p027",
+      "name": "Silk Blend Blouse",
+      "slug": "silk-blend-blouse",
+      "categorySlug": "ao",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 349000
+    },
+    {
+      "id": "p028",
+      "name": "Track Jacket",
+      "slug": "track-jacket",
+      "categorySlug": "outerwear",
+      "gender": "unisex",
+      "status": "ACTIVE",
+      "price": 599000
+    },
+    {
+      "id": "p001",
+      "name": "Essential Cotton T-Shirt",
+      "slug": "essential-cotton-t-shirt",
+      "categorySlug": "ao",
+      "gender": "unisex",
+      "status": "ACTIVE",
+      "price": 299000
+    },
+    {
+      "id": "p026",
+      "name": "High Waist Jeans",
+      "slug": "high-waist-jeans",
+      "categorySlug": "quan",
+      "gender": "women",
+      "status": "ACTIVE",
+      "price": 599000
+    }
+  ],
+  "mediaFileCount": 96
+}

@@ -20,7 +20,10 @@ export const NAV_SECTIONS = [
   },
   {
     section: "CUSTOMERS",
-    items: [{ label: "Customers", href: "/admin/customers", icon: "customers" }],
+    items: [
+      { label: "Customers", href: "/admin/customers", icon: "customers" },
+      { label: "AI Stylist Leads", href: "/admin/leads", icon: "customers" },
+    ],
   },
   {
     section: "MARKETING",

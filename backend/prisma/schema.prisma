@@ -27,6 +27,7 @@ model User {
   orders          Order[]
   reviews         Review[]
   wishlist        Wishlist?
+  aiConversations AiConversation[]
 
   @@map("users")
 }
@@ -355,6 +356,45 @@ model MediaFile {
 
   @@index([filename])
   @@map("media_files")
+}
+
+model AiConversation {
+  id                    String                 @id @default(uuid()) @db.VarChar(36)
+  userId                String?                @map("user_id")
+  guestSessionId        String?                @map("guest_session_id") @db.VarChar(191)
+  status                String                 @default("OPEN") @db.VarChar(30)
+  intentScore           Int                    @default(0) @map("intent_score")
+  intentLevel           String                 @default("LOW") @map("intent_level") @db.VarChar(20)
+  intentReason          String?                @map("intent_reason") @db.Text
+  intentSignals         Json?                  @map("intent_signals")
+  interestedProductIds  Json?                  @map("interested_product_ids")
+  budget                Int?
+  contextSummary        Json?                  @map("context_summary")
+  handoffDecision       String?                @map("handoff_decision") @db.VarChar(20)
+  handoffConsentedAt    DateTime?              @map("handoff_consented_at")
+  createdAt             DateTime               @default(now()) @map("created_at")
+  updatedAt             DateTime               @updatedAt @map("updated_at")
+  user                  User?                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages              AiConversationMessage[]
+
+  @@index([userId, updatedAt], map: "ai_conversations_user_updated_idx")
+  @@index([guestSessionId, updatedAt], map: "ai_conversations_guest_updated_idx")
+  @@index([handoffConsentedAt, status], map: "ai_conversations_leads_idx")
+  @@map("ai_conversations")
+}
+
+model AiConversationMessage {
+  id             String        @id @default(uuid()) @db.VarChar(36)
+  conversationId String        @map("conversation_id") @db.VarChar(36)
+  role           String        @db.VarChar(20)
+  text           String        @db.LongText
+  metadata       Json?
+  authorUserId   String?       @map("author_user_id")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  conversation   AiConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt], map: "ai_conversation_messages_thread_idx")
+  @@map("ai_conversation_messages")
 }
 
 model SizeGuide {

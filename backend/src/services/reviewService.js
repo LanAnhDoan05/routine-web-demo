@@ -159,7 +159,7 @@ async function createReview(user, productId, reviewData) {
     throw error;
   }
 
-  const finalImages = Array.isArray(images) ? processImageArray(images, `rev_${product.id}`) : [];
+  const finalImages = Array.isArray(images) ? await processImageArray(images, `rev_${product.id}`) : [];
 
   const created = await prisma.review.create({
     data: {

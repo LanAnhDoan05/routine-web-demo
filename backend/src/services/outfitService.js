@@ -268,7 +268,7 @@ async function createOutfit(outfitData) {
   const rawImages = outfitData.images || outfitData.image || outfitData.coverImage || image;
   if (rawImages) {
     const list = Array.isArray(rawImages) ? rawImages : [rawImages];
-    const processed = processImageArray(list, `outfit_${newId}`);
+    const processed = await processImageArray(list, `outfit_${newId}`);
     finalImages = processed.map((img) => (typeof img === 'string' ? img : img.url || '')).filter(Boolean);
     const primaryObj = processed.find((img) => img && typeof img === 'object' && img.isPrimary);
     finalCoverImage = primaryObj ? (primaryObj.url || primaryObj) : (finalImages[0] || '/images/placeholder.jpg');
@@ -349,7 +349,7 @@ async function updateOutfit(id, updateData) {
   const rawImages = updateData.images !== undefined ? updateData.images : (updateData.image !== undefined ? updateData.image : updateData.coverImage);
   if (rawImages !== undefined) {
     const list = Array.isArray(rawImages) ? rawImages : [rawImages];
-    const processed = processImageArray(list, `outfit_${existing.id}`);
+    const processed = await processImageArray(list, `outfit_${existing.id}`);
     const finalImages = processed.map((img) => (typeof img === 'string' ? img : img.url || '')).filter(Boolean);
     const primaryObj = processed.find((img) => img && typeof img === 'object' && img.isPrimary);
     const finalCoverImage = primaryObj

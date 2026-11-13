@@ -235,7 +235,7 @@ async function createCategory(categoryData) {
   }
 
   const rawImage = image || imageUrl || getCategoryImageFallback(generatedSlug, name);
-  const finalImage = processSingleImage(rawImage, `cat_${generatedSlug}`);
+  const finalImage = await processSingleImage(rawImage, `cat_${generatedSlug}`);
 
   const newCategory = await prisma.category.create({
     data: {
@@ -307,7 +307,7 @@ async function updateCategory(idOrSlug, updateData) {
 
   const rawImage = updateData.image !== undefined ? updateData.image : (updateData.imageUrl !== undefined ? updateData.imageUrl : current.image);
   const finalImage = updateData.image !== undefined || updateData.imageUrl !== undefined
-    ? processSingleImage(rawImage || getCategoryImageFallback(nextSlug, nextName), `cat_${current.id}`)
+    ? await processSingleImage(rawImage || getCategoryImageFallback(nextSlug, nextName), `cat_${current.id}`)
     : current.image;
 
   const dataToUpdate = {
